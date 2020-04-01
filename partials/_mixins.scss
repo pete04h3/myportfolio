@@ -1,0 +1,22 @@
+@mixin gridD() {
+  display: grid;
+}
+
+@mixin defaultBorder($width: 2px) {
+  border: $width solid black;
+  width: 180px; //change this with the size of the txt or image
+}
+
+@mixin center() {
+  text-align: center;
+  margin: 0 auto; //remove this to only center the txt
+}
+
+@mixin padding() {
+  padding: 20px;
+}
+
+@mixin marginTopBottom() {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

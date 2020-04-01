@@ -1,0 +1,37 @@
+body {
+  background-color: var-- magenta;
+}
+body h1 {
+  color: black;
+}
+
+header {
+  height: 5vh;
+  background: yellowgreen;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: magenta;
+  display: grid;
+}
+body h1 {
+  border: 2px solid black;
+  width: 180px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
+}
+body h1:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=/style.500aa19d.css.map */
