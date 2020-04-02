@@ -136,17 +136,28 @@ function gallery(data, parent) {
 function createElement(type) {
   return document.createElement("img");
 }
+},{}],"modules/portfolio.js":[function(require,module,exports) {
+"use strict";
+
+window.addEventListener("DOMContentLoaded", init);
+
+function init() {
+  console.log(init);
+  document.querySelector("body > main > section.section-3 > div").style.margin = "0px";
+}
 },{}],"main.js":[function(require,module,exports) {
 "use strict";
 
 var _gallery = require("./modules/gallery");
+
+var _portfolio = require("./modules/portfolio");
 
 "use strict";
 
 var data = [{
   i: ""
 }];
-},{"./modules/gallery":"modules/gallery.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./modules/gallery":"modules/gallery.js","./modules/portfolio":"modules/portfolio.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -174,7 +185,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51858" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56657" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
