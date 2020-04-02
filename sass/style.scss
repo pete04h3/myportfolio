@@ -30,8 +30,13 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 145%;
-  background: #fff;
+  background: black;
 }
+
+.section-7 h2 {
+  color: yellowgreen;
+}
+
 h1 {
   font-weight: 300;
   font-size: 3.75em;
@@ -75,6 +80,69 @@ label {
   display: none;
 }
 
+/* about */
+
+.icon {
+  position: relative;
+  margin-left: -20px;
+}
+
+.icon1 {
+  width: 30px;
+  height: 30px;
+  transform: scale(1.4);
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.iconjs {
+  width: 30px;
+  height: 30px;
+  transform: scale(1.4);
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+.icon2 {
+  width: 30px;
+  height: 30px;
+  transform: scale(1.4);
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+.icon3 {
+  width: 30px;
+  height: 30px;
+  transform: scale(1.02);
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+.icon4 {
+  width: 30px;
+  height: 30px;
+  transform: scale(1.02);
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.icon5 {
+  width: 30px;
+  height: 30px;
+  transform: scale(1.02);
+  margin-bottom: 15px;
+  margin-left: 33px;
+}
+
+.icon6 {
+  width: 30px;
+  height: 30px;
+  transform: scale(1.02);
+  margin-bottom: 15px;
+  margin-left: 35px;
+}
+
+/* svg */
+
 /**** contact button ***/
 
 .contactbtn {
@@ -107,6 +175,7 @@ button:focus {
   text-align: left;
   margin-left: 130px;
   margin-bottom: 10px;
+  width: 150px;
 }
 
 /* 12 Column Grid Layout */
@@ -153,6 +222,7 @@ button:focus {
 .row {
   width: 1170px;
   margin: 0 auto;
+  background-color: transparent;
 }
 .row::after {
   content: "";
@@ -163,7 +233,7 @@ button:focus {
 /* Section-1 Styles */
 .section-1 {
   padding: 4% 0 21.6em 0;
-  background: #f5989d url("https://www.congress-security.com/other-projects/take-page/image/top-bg.png") no-repeat center center;
+  background: black url("https://instinctif.com/content/uploads/2014/05/1920x1080px_Content.jpg") no-repeat center center;
   background-size: cover;
   color: #fff;
   .logo {
@@ -201,7 +271,7 @@ button:focus {
   }
   aside {
     position: relative;
-    /* padding: 14.5em 0 1.5em 0; */
+    padding: 9.5em 0 1.5em 0;
     h5 {
       position: absolute;
       bottom: -1.5em;
@@ -234,9 +304,10 @@ button:focus {
 /* Section-2 Styles */
 .section-2 {
   padding: 5% 0 3.5% 0;
+  background-color: black;
   h2 {
     padding-bottom: 0;
-    color: #222626;
+    color: yellowgreen;
   }
   .col-6 {
     padding-top: 0;
@@ -313,27 +384,44 @@ button:focus {
       }
       .first-img {
         background: #f5989d;
+        filter: grayscale(1);
       }
       .second-img {
         background: #615f7d;
+        filter: grayscale(1);
       }
       .third-img {
         background: #091e28 url("https://www.congress-security.com/other-projects/take-page/image/box-3-img.png") no-repeat center center;
+        filter: grayscale(1);
       }
       .fourth-img {
         background: #bd8cbf;
+        filter: grayscale(1);
       }
       .fifth-img {
         background: #091e28 url("https://www.congress-security.com/other-projects/take-page/image/box-5-img.png") no-repeat center center;
+        filter: grayscale(1);
       }
       .sixth-img {
         background: #82ca9c;
+        filter: grayscale(1);
       }
       .seventh-img {
         background: #091e28 url("https://www.congress-security.com/other-projects/take-page/image/box-7-img.png") no-repeat center center;
+        filter: grayscale(1);
       }
     }
   }
+}
+
+.first-img,
+.second-img,
+.third-img,
+.fourth-img,
+.fifth-img,
+.sixth-img,
+.seventh-img:hover {
+  filter: grayscale(0);
 }
 
 /* Section-4 Styles */
@@ -352,12 +440,12 @@ button:focus {
       }
     }
     h2 {
-      color: #222626;
+      color: yellowgreen;
     }
   }
   h4 {
     padding: 6% 0 6% 0;
-    color: #67676d;
+    color: snow;
   }
   p {
     color: #959595;
@@ -409,7 +497,7 @@ button:focus {
 /* Section-7 Styles */
 .section-7 {
   padding: 4.5% 0 6.75% 0;
-  background: #f6f7fa;
+  background: black;
   .row {
     position: relative;
     h5 {
