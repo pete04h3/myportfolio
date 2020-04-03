@@ -21,6 +21,8 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
     "parcel-plugin-static-files-copy": "^2.3.1",
     "sass": "^1.26.3"
   }

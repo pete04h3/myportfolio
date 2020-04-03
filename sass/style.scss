@@ -171,11 +171,7 @@ button:focus {
 
 /* portfolio section */
 
-.portfolioheadline {
-  text-align: left;
-  margin-left: 130px;
-  margin-bottom: 10px;
-  width: 150px;
+.section-3 h2 {
   color: yellowgreen;
 }
 
@@ -317,15 +313,12 @@ button:focus {
       color: #959595;
     }
   }
-  .col-6:last-child {
-  }
 }
 
 /* Section-3 Styles */
 
 .section-3 {
   max-width: 2400px;
-  height: 556px;
   overflow-x: hidden;
   .wrapper {
     width: 1140px;
@@ -497,8 +490,9 @@ button:focus {
 
 /* Section-7 Styles */
 .section-7 {
-  padding: 4.5% 0 6.75% 0;
+  /*  padding: 4.5% 0 6.75% 0; */
   background: black;
+
   .row {
     position: relative;
     h5 {
@@ -573,6 +567,10 @@ button:focus {
   .col-6:hover h3 {
     font-weight: 400;
   }
+}
+
+.section-7 h2 {
+  color: yellowgreen;
 }
 
 /* Footer */
