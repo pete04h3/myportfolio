@@ -12,10 +12,12 @@ import { init } from "./modules/portfolio";
 const toggler = document.querySelector(".menu__toggler");
 const menu = document.querySelector(".mobile-menu-dropdown");
 const atags = document.querySelector(".atags-mobile-menu");
+const mobilelogo = document.querySelector(".mobile-logo");
 
 toggler.addEventListener("click", () => {
   toggler.classList.toggle("active");
   atags.classList.toggle("fade-in-left");
+  mobilelogo.classList.toggle("rotateAnimation");
   menu.classList.toggle("active");
 });
 
