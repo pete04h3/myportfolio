@@ -200,6 +200,7 @@ a {
 
 .atags-desktop-menu {
   display: flex;
+  margin-top: 10px;
 }
 
 /* Desktop Menu -SLUT- */
@@ -378,7 +379,16 @@ label {
   margin-left: 35px;
 }
 
-/* svg */
+/* phone gif */
+.phonegif {
+  background-color: transparent;
+  position: absolute;
+  top: 420px;
+  width: 200px;
+  height: 400px;
+  margin-right: 145px;
+}
+
 /**** contact button ***/
 .contactbtn {
   background-color: transparent;
@@ -701,7 +711,7 @@ button:focus {
 /* Section-5 Styles */
 .section-5 {
   padding: 23.5% 0 6.1% 0;
-  background: #bd8cbf url("https://www.congress-security.com/other-projects/take-page/image/middle-bg.png") no-repeat center center;
+  background: #bd8cbf url("/peterpanik.6322a2f5.png") no-repeat center center;
   background-size: cover;
   color: seashell;
 }
