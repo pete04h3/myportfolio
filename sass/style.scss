@@ -41,6 +41,10 @@ body {
   background: black;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 .section-7 h2 {
   color: yellowgreen;
 }
@@ -166,6 +170,8 @@ footer {
   width: 200px;
   height: 400px;
   margin-right: 145px;
+  margin-top: -30px;
+  padding: 20px;
 }
 
 /* contact section */
@@ -886,6 +892,32 @@ button:focus {
   margin-top: 20px;
 }
 
+/* text area */
+textarea {
+  margin: 0px;
+  width: 306px;
+  height: 172px;
+  background-color: transparent;
+  border: 1px solid grey;
+}
+
+/*contactinfo*/
+
+.contactinfo {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.contactinfo h2 {
+  color: black;
+  padding: 20px;
+}
+
+.contactinfo p {
+  padding: 20px;
+}
+
 /* Footer */
 footer {
   /*  padding: 6.35% 0 7.3% 0; */
@@ -959,6 +991,21 @@ footer {
     overflow: hidden;
   }
 }
+
+@media only screen and (max-width: 375px) {
+  .contactcontainer .inner .panel.panel-left {
+    display: none;
+  }
+  a.send-btn {
+    float: initial;
+    display: flex;
+    margin: 0 auto;
+    color: #b1b1b1;
+    transition: 0.2s ease;
+    justify-content: center;
+  }
+}
+
 @media only screen and (min-width: 1800px) {
   body {
     font-size: 18px;
@@ -1076,6 +1123,12 @@ footer {
   footer .col-2 ul li {
     padding-left: 33.33%;
     text-align: left;
+  }
+  .contactcontainer .inner .panel.panel-left {
+    display: none;
+  }
+  .contactcontainer .inner .panel .panel-content {
+    left: 95%;
   }
 }
 
