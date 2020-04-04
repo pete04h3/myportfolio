@@ -976,14 +976,22 @@ button:focus {
 /* Section-5 Styles */
 .section-5 {
   padding: 23.5% 0 6.1% 0;
-  background: #bd8cbf url("/peterpanik.6322a2f5.png") no-repeat center center;
+  background: #bd8cbf url("/uikit4verdydark.1682ad50.png") no-repeat center center;
   background-size: cover;
   color: seashell;
 }
 .section-5 h2 {
   font-size: 3.75em;
-  color: seashell;
+  color: lightgray;
   font-weight: 400;
+  position: relative;
+  bottom: 250px;
+}
+.section-5 p {
+  font-weight: 400;
+  position: relative;
+  top: -261px;
+  color: lightgray;
 }
 .section-5 .col-2 {
   padding-top: 0;
@@ -1020,7 +1028,7 @@ button:focus {
 .section-7 {
   /*  padding: 4.5% 0 6.75% 0; */
   background: black;
-  height: 50vh;
+  height: 70vh;
 }
 .section-7 .row {
   position: relative;
