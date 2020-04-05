@@ -874,6 +874,7 @@ button:focus {
 }
 .section-3 .wrapper #gallery .gal-img p:not(:last-child) {
   padding: 30px 0;
+  width: 80%;
 }
 .section-3 .wrapper #gallery .gal-img a {
   position: absolute;
@@ -1224,6 +1225,12 @@ footer {
     transition: 0.2s ease;
     justify-content: center;
   }
+
+  .section-3 .wrapper #gallery {
+    display: inline-block;
+    width: 100%;
+    overflow: scroll;
+  }
 }
 @media only screen and (min-width: 1800px) {
   body {
@@ -1236,6 +1243,11 @@ footer {
 
   .section-3 .wrapper {
     width: 1570px;
+  }
+
+  .section-3 .wrapper #gallery {
+    display: flex;
+    width: 100%;
   }
 
   .section-3 .wrapper .gallery-translate {
@@ -1287,20 +1299,16 @@ footer {
 
   .section-3 {
     height: 1112px;
+    overflow: hidden;
   }
 
   .section-3 .wrapper {
-    width: 950px;
+    width: 900px;
   }
 
   .section-3 .wrapper #gallery {
     width: 800px;
     margin: 0 auto;
-  }
-
-  .second-img,
-.sixth-img {
-    display: none;
   }
 
   footer .col-6:last-child {
@@ -1322,14 +1330,12 @@ footer {
 
   .section-3 {
     height: 834px;
-  }
-
-  .section-3 .wrapper {
-    width: 760px;
+    overflow: hidden;
   }
 
   .section-3 .wrapper #gallery {
     width: 760px;
+    display: flex;
   }
 
   .section-3 .wrapper #gallery .first-img,
@@ -1397,8 +1403,9 @@ footer .col-2 ul li {
     padding-left: 20%;
   }
 
-  .section-3 {
-    display: none;
+  .section-3 .wrapper #gallery {
+    display: block;
+    width: 100%;
   }
 
   .section-4 h4,
@@ -1461,8 +1468,9 @@ footer .col-2 ul li {
     margin-top: 20px;
   }
 
-  .section-3 {
-    display: none;
+  .section-3 .wrapper #gallery {
+    display: inline-block;
+    width: 100%;
   }
 
   .section-5 {
