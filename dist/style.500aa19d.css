@@ -249,6 +249,10 @@ a {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* hide */
 .hide {
   display: none;
