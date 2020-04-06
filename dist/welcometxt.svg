@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1039.08 317.58">
+  <defs>
+    <style>
+      .cls-1, .cls-7 {
+        font-size: 200px;
+        font-family: Webrush;
+      }
+
+      .cls-1 {
+        fill: gray;
+      }
+
+      .cls-2 {
+        letter-spacing: 0.11em;
+      }
+
+      .cls-3 {
+        letter-spacing: -0.09em;
+      }
+
+      .cls-4 {
+        letter-spacing: -0.07em;
+      }
+
+      .cls-5 {
+        letter-spacing: -0.1em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0.06em;
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <text class="cls-1" transform="translate(43.83 175.9)"><tspan class="cls-2">W</tspan><tspan class="cls-3" x="183.4" y="0">e</tspan><tspan class="cls-4" x="286.8" y="0">l</tspan><tspan x="405.8" y="0">c</tspan><tspan class="cls-5" x="528.8" y="0">o</tspan><tspan class="cls-6" x="639.6" y="0">m</tspan><tspan x="815.2" y="0">e</tspan></text>
+        <text class="cls-7" transform="translate(34.69 194.79)"><tspan class="cls-2">W</tspan><tspan class="cls-3" x="183.4" y="0">e</tspan><tspan class="cls-4" x="286.8" y="0">l</tspan><tspan x="405.8" y="0">c</tspan><tspan class="cls-5" x="528.8" y="0">o</tspan><tspan class="cls-6" x="639.6" y="0">m</tspan><tspan x="815.2" y="0">e</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

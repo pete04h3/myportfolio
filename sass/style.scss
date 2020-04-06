@@ -2,7 +2,7 @@
 @use 'partials/header';
 @use 'partials/mixins';
 @use 'partials/burgermenu';
-@use 'partials/zoomineffect';
+@use 'partials/animations';
 
 /* body {
   background-color: var.$bg-color;
@@ -539,10 +539,58 @@ button:focus {
   display: block;
 }
 
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 9;
+  display: grid;
+  grid-template-rows: 16;
+  grid-template-rows: repeat(16, 1fr);
+  grid-template-columns: repeat(16, 1fr);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.welcometxt {
+  grid-column: 1 / span 16;
+  grid-row: 7 / span 3;
+}
+
+#welcometxt {
+  width: 400px;
+}
+
+.welcomename {
+  color: seashell;
+  letter-spacing: 15px;
+  font-size: 20px;
+  grid-column: 1 / span 16;
+  grid-row: 3 / span 16;
+  margin-left: 46px;
+}
+
+.continuetoportfolio {
+  color: seashell;
+  font-size: 12px;
+  grid-column: 1 / span 16;
+  grid-row: 6 / span 16;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+
+.continuetoportfolio:hover {
+  cursor: pointer;
+}
+
 /* Section-1 Styles */
 .section-1 {
   /* padding: 4% 0 21.6em 0; */
-  background: black url("https://instinctif.com/content/uploads/2014/05/1920x1080px_Content.jpg") no-repeat center center;
+  /*   background: black url("https://instinctif.com/content/uploads/2014/05/1920x1080px_Content.jpg") no-repeat center center; */
   background-size: cover;
   color: seashell;
   .logo {
