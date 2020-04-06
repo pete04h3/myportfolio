@@ -1,0 +1,13 @@
+.zoomIneffect {
+  -webkit-animation: zoom 50s; /* Chrome, Safari, Opera */
+  animation: zoom 50s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}

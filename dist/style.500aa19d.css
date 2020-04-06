@@ -214,6 +214,20 @@ a {
   }
 }
 /* Media Queries -SLUT-*/
+.zoomIneffect {
+  -webkit-animation: zoom 50s;
+  /* Chrome, Safari, Opera */
+  animation: zoom 50s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
 /* body {
   background-color: var.$bg-color;
   @include mixins.gridD();
@@ -596,7 +610,7 @@ label {
 /* active state */
 input:focus ~ label,
 input:valid ~ label {
-  top: -10px;
+  top: -25px;
   font-size: 12px;
   color: seashell;
   opacity: 1;
@@ -1287,7 +1301,6 @@ footer {
 
   .section-3 .wrapper #gallery {
     display: flex;
-    width: 100%;
   }
 
   .section-3 .wrapper .gallery-translate {
