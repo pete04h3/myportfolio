@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/Users/Peet/Documents/kea/3. semester/afleveringer/professionel portfolio/portfolio/static/uikit4verdydark.png":[["uikit4verdydark.1682ad50.png","static/uikit4verdydark.png"],"static/uikit4verdydark.png"],"/Users/Peet/Documents/kea/3. semester/afleveringer/professionel portfolio/portfolio/static/portrait.jpg":[["portrait.06c0cf39.jpg","static/portrait.jpg"],"static/portrait.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"/Users/Peet/Documents/kea/3. semester/afleveringer/professionel portfolio/portfolio/static/uikit4verdydark.png":[["uikit4verdydark.1682ad50.png","static/uikit4verdydark.png"],"static/uikit4verdydark.png"],"/Users/Peet/Documents/kea/3. semester/afleveringer/professionel portfolio/portfolio/static/selvportrait.jpg":[["selvportrait.95d0f0a9.jpg","static/selvportrait.jpg"],"static/selvportrait.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54188" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57221" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
