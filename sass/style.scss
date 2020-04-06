@@ -42,15 +42,12 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 145%;
-  background: black;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(2, 4, 25, 1) 23%, rgba(19, 72, 79, 1) 100%);
 }
 
 .noscroll {
   overflow: hidden;
-}
-
-.section-7 h2 {
-  color: yellowgreen;
 }
 
 h1 {
@@ -316,14 +313,15 @@ body.menu-active .nav a.white {
   /*   background-image: url(""); */
   /*   background-position: center bottom;
   background-repeat: no-repeat; */
-  background-color: seashell;
+  background-color: black;
   background-size: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
 
 .contactcontainer .inner .panel.panel-right {
   margin-right: -10%;
-  background: #1b1b1b;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(2, 4, 25, 1) 23%, rgba(19, 72, 79, 1) 100%);
 }
 
 .contactcontainer .inner .panel.panel-right .panel-content .form {
@@ -679,7 +677,8 @@ button:focus {
 /* Section-2 Styles */
 .section-2 {
   padding: 5% 0 3.5% 0;
-  background-color: black;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(2, 4, 25, 1) 23%, rgba(19, 72, 79, 1) 100%);
   h2 {
     padding-bottom: 0;
     color: seashell;
@@ -699,6 +698,8 @@ button:focus {
 .section-3 {
   max-width: 2400px;
   overflow-x: hidden;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(2, 4, 25, 1) 23%, rgba(19, 72, 79, 1) 100%);
   .wrapper {
     width: 1140px;
     height: inherit;
@@ -801,6 +802,8 @@ button:focus {
 /* Section-4 Styles */
 .section-4 {
   padding: 5% 0 7.7% 0;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(2, 4, 25, 1) 23%, rgba(19, 72, 79, 1) 100%);
   aside {
     position: relative;
     h5 {
@@ -878,7 +881,8 @@ button:focus {
 /* Section-7 Styles */
 .section-7 {
   /*  padding: 4.5% 0 6.75% 0; */
-  background: black;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(2, 4, 25, 1) 23%, rgba(19, 72, 79, 1) 100%);
   height: 70vh;
 
   .row {
@@ -981,12 +985,13 @@ textarea {
 }
 
 .contactinfo h2 {
-  color: black;
+  color: seashell;
   padding: 20px;
 }
 
 .contactinfo p {
   padding: 20px;
+  color: seashell;
 }
 
 .contactinfo img {
@@ -1054,7 +1059,9 @@ footer {
   /*  padding: 6.35% 0 7.3% 0; */
   height: 20vh;
   color: #fff;
-  background: black h4 {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(2, 4, 25, 1) 23%, rgba(19, 72, 79, 1) 100%);
+  h4 {
     padding-bottom: 1em;
   }
 }
@@ -1065,7 +1072,8 @@ footer {
   display: block;
   overflow: hidden;
   clear: both;
-  background-color: #161616;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(2, 4, 25, 1) 23%, rgba(19, 72, 79, 1) 100%);
   color: white;
   font-family: Roboto, Helvetica, sans-serif;
   padding-top: 100px;
