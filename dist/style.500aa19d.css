@@ -320,7 +320,8 @@ a {
 .scene.-gallery {
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 200px;
+  margin-bottom: 30px;
+  margin-top: 30px;
   align-items: flex-start;
 }
 .scene.-gallery > .item {
@@ -338,6 +339,14 @@ a {
   height: auto;
   width: 100%;
   margin-top: -6px;
+  filter: brightness(0.6);
+}
+
+.item img:hover {
+  filter: brightness(1);
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .detail {
@@ -443,7 +452,7 @@ body {
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: 145%;
+  line-height: 26px;
   background: #020024;
   background: radial-gradient(circle, #020024 0%, #020419 23%, #13484f 100%);
 }
@@ -459,8 +468,9 @@ h1 {
 
 h2 {
   line-height: 125%;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2.1875em;
+  color: seashell;
 }
 
 h3 {
@@ -480,6 +490,7 @@ h5 {
 
 p {
   font-weight: 400;
+  color: #959595;
 }
 
 a {
@@ -512,6 +523,10 @@ footer {
 }
 
 /* about */
+.allicons {
+  display: inline-block;
+}
+
 .icon {
   position: relative;
   margin-left: -20px;
@@ -746,7 +761,7 @@ body.menu-active .nav a.white {
   display: block;
   margin: 0 0 45px 0;
   color: seashell;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 18px;
 }
 
@@ -1091,130 +1106,6 @@ button:focus {
 }
 
 /* Section-2 Styles */
-.section-2 {
-  padding: 5% 0 3.5% 0;
-  background: #020024;
-  background: radial-gradient(circle, #020024 0%, #020419 23%, #13484f 100%);
-}
-.section-2 h2 {
-  padding-bottom: 0;
-  color: seashell;
-  font-weight: 400;
-}
-.section-2 .col-6 {
-  padding-top: 0;
-}
-.section-2 .col-6 p {
-  padding-top: 4%;
-  color: #959595;
-}
-
-/* Section-3 Styles */
-.section-3 {
-  display: none;
-  max-width: 2400px;
-  overflow-x: hidden;
-  background: #020024;
-  background: radial-gradient(circle, #020024 0%, #020419 23%, #13484f 100%);
-}
-.section-3 .wrapper {
-  width: 1140px;
-  height: inherit;
-  margin: 0 auto;
-}
-.section-3 .wrapper .gallery-translate {
-  margin-left: -850px;
-}
-.section-3 .wrapper #gallery {
-  transition: all 2s;
-  display: flex;
-  flex-flow: row wrap;
-  width: 2000px;
-  height: inherit;
-  color: #fff;
-}
-.section-3 .wrapper #gallery .gal-img {
-  position: relative;
-  padding: 50px 45px 0 45px;
-}
-.section-3 .wrapper #gallery .gal-img p:not(:last-child) {
-  padding: 30px 0;
-  width: 80%;
-}
-.section-3 .wrapper #gallery .gal-img a {
-  position: absolute;
-  bottom: 50px;
-  left: 45px;
-}
-.section-3 .wrapper #gallery .gal-img a p {
-  font-weight: 700;
-  color: #fff;
-}
-.section-3 .wrapper #gallery .gal-img span {
-  position: absolute;
-  bottom: 50px;
-  right: 45px;
-  font-size: 1.5em;
-  transform: rotate(90deg);
-}
-.section-3 .wrapper #gallery .gal-img:hover {
-  -webkit-filter: brightness(110%);
-  filter: brightness(110%);
-}
-.section-3 .wrapper #gallery .first-img,
-.section-3 .wrapper #gallery .second-img,
-.section-3 .wrapper #gallery .third-img,
-.section-3 .wrapper #gallery .sixth-img {
-  width: 400px;
-  height: 278px;
-}
-.section-3 .wrapper #gallery .fourth-img,
-.section-3 .wrapper #gallery .fifth-img,
-.section-3 .wrapper #gallery .seventh-img {
-  width: 800px;
-  height: 278px;
-  padding-right: 250px;
-  background-size: cover;
-}
-.section-3 .wrapper #gallery .first-img {
-  background: #f5989d;
-  filter: grayscale(1);
-}
-.section-3 .wrapper #gallery .second-img {
-  background: #615f7d;
-  filter: grayscale(1);
-}
-.section-3 .wrapper #gallery .third-img {
-  background: #091e28 url("https://www.congress-security.com/other-projects/take-page/image/box-3-img.png") no-repeat center center;
-  filter: grayscale(1);
-}
-.section-3 .wrapper #gallery .fourth-img {
-  background: #bd8cbf;
-  filter: grayscale(1);
-}
-.section-3 .wrapper #gallery .fifth-img {
-  background: #091e28 url("https://www.congress-security.com/other-projects/take-page/image/box-5-img.png") no-repeat center center;
-  filter: grayscale(1);
-}
-.section-3 .wrapper #gallery .sixth-img {
-  background: #82ca9c;
-  filter: grayscale(1);
-}
-.section-3 .wrapper #gallery .seventh-img {
-  background: #091e28 url("https://www.congress-security.com/other-projects/take-page/image/box-7-img.png") no-repeat center center;
-  filter: grayscale(1);
-}
-
-.first-img,
-.second-img,
-.third-img,
-.fourth-img,
-.fifth-img,
-.sixth-img,
-.seventh-img:hover {
-  filter: grayscale(0);
-}
-
 /** section-box-grid **/
 #section-box-grid {
   background: #020024;
@@ -1225,6 +1116,12 @@ button:focus {
   justify-content: center;
   align-items: center;
   justify-items: center;
+}
+
+#section-box-grid h2 {
+  color: seashell;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 
 /* Section-4 Styles */

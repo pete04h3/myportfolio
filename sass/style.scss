@@ -47,7 +47,7 @@ body {
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: 145%;
+  line-height: 26px;
   background: rgb(2, 0, 36);
   background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(2, 4, 25, 1) 23%, rgba(19, 72, 79, 1) 100%);
 }
@@ -62,8 +62,9 @@ h1 {
 }
 h2 {
   line-height: 125%;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2.1875em;
+  color: seashell;
 }
 h3 {
   font-weight: 300;
@@ -79,6 +80,7 @@ h5 {
 }
 p {
   font-weight: 400;
+  color: #959595;
 }
 a {
   text-decoration: none;
@@ -108,6 +110,10 @@ footer {
 }
 
 /* about */
+
+.allicons {
+  display: inline-block;
+}
 
 .icon {
   position: relative;
@@ -345,7 +351,7 @@ body.menu-active .nav a.white {
   display: block;
   margin: 0 0 45px 0;
   color: seashell;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 18px;
 }
 
@@ -681,130 +687,6 @@ button:focus {
 }
 
 /* Section-2 Styles */
-.section-2 {
-  padding: 5% 0 3.5% 0;
-  background: rgb(2, 0, 36);
-  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(2, 4, 25, 1) 23%, rgba(19, 72, 79, 1) 100%);
-  h2 {
-    padding-bottom: 0;
-    color: seashell;
-    font-weight: 400;
-  }
-  .col-6 {
-    padding-top: 0;
-    p {
-      padding-top: 4%;
-      color: #959595;
-    }
-  }
-}
-
-/* Section-3 Styles */
-
-.section-3 {
-  display: none;
-  max-width: 2400px;
-  overflow-x: hidden;
-  background: rgb(2, 0, 36);
-  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(2, 4, 25, 1) 23%, rgba(19, 72, 79, 1) 100%);
-  .wrapper {
-    width: 1140px;
-    height: inherit;
-    margin: 0 auto;
-    .gallery-translate {
-      margin-left: -850px;
-    }
-    #gallery {
-      transition: all 2s;
-      display: flex;
-      flex-flow: row wrap;
-      width: 2000px;
-      height: inherit;
-      color: #fff;
-      .gal-img {
-        position: relative;
-        padding: 50px 45px 0 45px;
-        p:not(:last-child) {
-          padding: 30px 0;
-          width: 80%;
-        }
-        a {
-          position: absolute;
-          bottom: 50px;
-          left: 45px;
-          p {
-            font-weight: 700;
-            color: #fff;
-          }
-        }
-        span {
-          position: absolute;
-          bottom: 50px;
-          right: 45px;
-          font-size: 1.5em;
-          transform: rotate(90deg);
-        }
-        &:hover {
-          -webkit-filter: brightness(110%);
-          filter: brightness(110%);
-        }
-      }
-      .first-img,
-      .second-img,
-      .third-img,
-      .sixth-img {
-        width: 400px;
-        height: 278px;
-      }
-      .fourth-img,
-      .fifth-img,
-      .seventh-img {
-        width: 800px;
-        height: 278px;
-        padding-right: 250px;
-        background-size: cover;
-      }
-      .first-img {
-        background: #f5989d;
-        filter: grayscale(1);
-      }
-      .second-img {
-        background: #615f7d;
-        filter: grayscale(1);
-      }
-      .third-img {
-        background: #091e28 url("https://www.congress-security.com/other-projects/take-page/image/box-3-img.png") no-repeat center center;
-        filter: grayscale(1);
-      }
-      .fourth-img {
-        background: #bd8cbf;
-        filter: grayscale(1);
-      }
-      .fifth-img {
-        background: #091e28 url("https://www.congress-security.com/other-projects/take-page/image/box-5-img.png") no-repeat center center;
-        filter: grayscale(1);
-      }
-      .sixth-img {
-        background: #82ca9c;
-        filter: grayscale(1);
-      }
-      .seventh-img {
-        background: #091e28 url("https://www.congress-security.com/other-projects/take-page/image/box-7-img.png") no-repeat center center;
-        filter: grayscale(1);
-      }
-    }
-  }
-}
-
-.first-img,
-.second-img,
-.third-img,
-.fourth-img,
-.fifth-img,
-.sixth-img,
-.seventh-img:hover {
-  filter: grayscale(0);
-}
 
 /** section-box-grid **/
 
@@ -817,6 +699,12 @@ button:focus {
   justify-content: center;
   align-items: center;
   justify-items: center;
+}
+
+#section-box-grid h2 {
+  color: seashell;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 
 /* Section-4 Styles */

@@ -21,7 +21,8 @@ $app-height: 90vmin;
   &.-gallery {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 200px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     align-items: flex-start;
 
     > .item {
@@ -42,7 +43,15 @@ $app-height: 90vmin;
     height: auto;
     width: 100%;
     margin-top: -6px;
+    filter: brightness(0.6);
   }
+}
+
+.item img:hover {
+  filter: brightness(1);
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .detail {
