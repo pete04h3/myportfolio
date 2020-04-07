@@ -1124,6 +1124,11 @@ button:focus {
   margin-bottom: 30px;
 }
 
+.description2 {
+  margin-top: -60px;
+  margin-bottom: 40px;
+}
+
 /* Section-4 Styles */
 .section-4 {
   padding: 5% 0 7.7% 0;

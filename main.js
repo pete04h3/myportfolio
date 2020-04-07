@@ -64,7 +64,42 @@ items.forEach(item => {
     if (detailItem.dataset.image == "owl") {
       console.log("animation");
       titel.textContent = "ANIMATION";
-      tekst.textContent = "lolololololol";
+      tekst.textContent = "lolololololol lolololololol lolololololol lolololololol lolololololol";
+      link.href = "https://lisabianca.dk/kea/11-frontend/light_bulb/";
+    }
+
+    if (detailItem.dataset.image == "deer") {
+      console.log("koga");
+      titel.textContent = "KOGA";
+      tekst.textContent = "lolololololol lolololololol lolololololol lolololololol lolololololol";
+      link.href = "https://lisabianca.dk/kea/11-frontend/light_bulb/";
+    }
+
+    if (detailItem.dataset.image == "hipster") {
+      console.log("kiteai");
+      titel.textContent = "KITEAI";
+      tekst.textContent = "lolololololol lolololololol lolololololol lolololololol lolololololol";
+      link.href = "https://lisabianca.dk/kea/11-frontend/light_bulb/";
+    }
+
+    if (detailItem.dataset.image == "ram") {
+      console.log("luibh");
+      titel.textContent = "LUIBH";
+      tekst.textContent = "lolololololol lolololololol lolololololol lolololololol lolololololol";
+      link.href = "https://lisabianca.dk/kea/11-frontend/light_bulb/";
+    }
+
+    if (detailItem.dataset.image == "dog") {
+      console.log("statumanu");
+      titel.textContent = "STATUMANU";
+      tekst.textContent = "lolololololol lolololololol lolololololol lolololololol lolololololol";
+      link.href = "https://lisabianca.dk/kea/11-frontend/light_bulb/";
+    }
+
+    if (detailItem.dataset.image == "ram-side") {
+      console.log("euroman");
+      titel.textContent = "EUROMAN";
+      tekst.textContent = "lolololololol lolololololol lolololololol lolololololol lolololololol";
       link.href = "https://lisabianca.dk/kea/11-frontend/light_bulb/";
     }
 
