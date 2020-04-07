@@ -205,11 +205,24 @@ ga("send", "pageview");
 var items = document.querySelectorAll(".item");
 var detailItem = document.querySelector(".detail");
 var detailScene = document.querySelector(".scene.-detail");
+var titel = document.querySelector(".title");
+var tekst = document.querySelector(".description");
+var clickLink = document.querySelector(".description2");
+var link = document.querySelector("#section-box-grid > div > div.scene.-detail > div > div > a");
 detailScene.style.display = "none";
 items.forEach(function (item) {
   item.addEventListener("click", function () {
     var itemImage = item.querySelector("img");
     detailItem.setAttribute("data-image", item.getAttribute("data-key"));
+    console.log(detailItem);
+
+    if (detailItem.dataset.image == "owl") {
+      console.log("animation");
+      titel.textContent = "ANIMATION";
+      tekst.textContent = "lolololololol";
+      link.href = "https://lisabianca.dk/kea/11-frontend/light_bulb/";
+    }
+
     detailItem.querySelector("img").setAttribute("src", itemImage.getAttribute("src"));
     detailScene.style.display = "block";
     item.style.opacity = 0;
@@ -272,7 +285,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54650" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59048" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

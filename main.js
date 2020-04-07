@@ -47,6 +47,10 @@ ga("send", "pageview");
 const items = document.querySelectorAll(".item");
 const detailItem = document.querySelector(".detail");
 const detailScene = document.querySelector(".scene.-detail");
+const titel = document.querySelector(".title");
+const tekst = document.querySelector(".description");
+const clickLink = document.querySelector(".description2");
+const link = document.querySelector("#section-box-grid > div > div.scene.-detail > div > div > a");
 
 detailScene.style.display = "none";
 
@@ -55,6 +59,14 @@ items.forEach(item => {
     const itemImage = item.querySelector("img");
 
     detailItem.setAttribute("data-image", item.getAttribute("data-key"));
+    console.log(detailItem);
+
+    if (detailItem.dataset.image == "owl") {
+      console.log("animation");
+      titel.textContent = "ANIMATION";
+      tekst.textContent = "lolololololol";
+      link.href = "https://lisabianca.dk/kea/11-frontend/light_bulb/";
+    }
 
     detailItem.querySelector("img").setAttribute("src", itemImage.getAttribute("src"));
 
