@@ -3,6 +3,7 @@
 @use 'partials/mixins';
 @use 'partials/burgermenu';
 @use 'partials/animations';
+@use 'partials/portfolioboxes';
 
 /* body {
   background-color: var.$bg-color;
@@ -34,6 +35,11 @@ html {
 
 .hide {
   display: none;
+}
+
+/* noscroll */
+.noscroll {
+  overflow: hidden;
 }
 
 /* General Styles */
@@ -696,6 +702,7 @@ button:focus {
 /* Section-3 Styles */
 
 .section-3 {
+  display: none;
   max-width: 2400px;
   overflow-x: hidden;
   background: rgb(2, 0, 36);
@@ -797,6 +804,19 @@ button:focus {
 .sixth-img,
 .seventh-img:hover {
   filter: grayscale(0);
+}
+
+/** section-box-grid **/
+
+#section-box-grid {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(2, 4, 25, 1) 23%, rgba(19, 72, 79, 1) 100%);
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
 /* Section-4 Styles */
@@ -1281,6 +1301,73 @@ footer {
   }
   .contactcontainer .inner .panel .panel-content {
     left: 95%;
+    height: 60%;
+  }
+
+  .contactcontainer .inner {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .social {
+    padding-top: 50px;
+  }
+
+  .zoomBIn2 {
+    width: 400px;
+    height: 450px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .zoomBOut2 {
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: -447px;
+  }
+
+  .section-7 {
+    padding: 0;
+    background: #020024;
+    background: radial-gradient(circle, #020024 0%, #020419 23%, #13484f 100%);
+    height: 70vh;
+  }
+
+  .contactcontainer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+  }
+
+  .detail {
+    color: white;
+    transform-origin: top left;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: fixed;
+    top: 20vh;
+    left: 30vw;
+  }
+
+  .contactcontainer .inner .panel.panel-right .panel-content .form {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 200px;
+    top: 50%;
+    left: 35%;
+    transform: translateX(-50%) translateY(-25%);
   }
 }
 
@@ -1323,6 +1410,43 @@ footer {
   footer .col-2 ul li {
     padding-left: 15%;
   }
+
+  .contactcontainer .inner .panel.panel-right .panel-content .form {
+    display: block;
+    position: block;
+    margin: 0 auto;
+    width: 300px;
+    min-height: 200px;
+    top: 50%;
+    left: 35%;
+    transform: translateX(-50%) translateY(-25%);
+  }
+
+  .zoomBOut2 {
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin-top: -325px;
+  }
+
+  .zoomBIn2 {
+    width: 300px;
+    height: 340px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .section-1 div:last-child img {
+    position: fixed;
+    top: -12em;
+    right: 7em;
+    height: 670px;
+    width: 190px;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1333,6 +1457,42 @@ footer {
   .section-1 {
     color: seashell;
     height: 100vh;
+  }
+
+  .scene {
+    display: inline-grid;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
+  }
+
+  .app {
+    font-family: Lato, sans-serif;
+    overflow: hidden;
+    margin-left: 0;
+  }
+
+  .scene.-gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0;
+    display: contents;
+  }
+
+  .detail {
+    color: white;
+    transform-origin: top left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    top: 10vh;
+    left: 0vw;
+    overflow: hidden;
   }
 
   body > main > section.section-1 > div:nth-child(4) > div.col-5 > div > p {
@@ -1367,10 +1527,11 @@ footer {
     color: seashell;
     letter-spacing: 8px;
     font-size: 20px;
-    grid-column: 2 / span 14;
+    grid-column: 3 / span 14;
     grid-row: 3 / span 14;
     width: 100%;
     margin: 0 auto;
+    margin-left: -14px;
   }
 
   #welcometxt {
@@ -1421,5 +1582,80 @@ footer {
   .col-5 {
     position: relative;
     bottom: 45px;
+  }
+
+  .section-7 {
+    height: 50vh;
+  }
+
+  .contactcontainer .inner .panel.panel-right .panel-content .form {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    width: 300px;
+    min-height: 700px;
+    top: 100%;
+    margin-left: -20px;
+    transform: translateX(-50%) translateY(-25%);
+  }
+
+  .zoomBOut2 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0px;
+    border-radius: 50%;
+    display: block;
+  }
+
+  .contactcontainer .inner .panel .panel-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    transform: translateX(-50%) translateY(-50%) skew(20deg);
+  }
+
+  .contactcontainer .inner {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .section-1 div:last-child img {
+    position: fixed;
+    top: -12em;
+    right: -7em;
+    height: 670px;
+    width: 190px;
+    overflow: hidden;
+  }
+
+  .social {
+    padding-top: 200px;
+  }
+
+  .zoomBIn2 {
+    width: 200px;
+    height: 230px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .zoomBOut2 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0px;
+    border-radius: 50%;
+    display: block;
   }
 }
