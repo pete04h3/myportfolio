@@ -195,7 +195,8 @@ a {
 }
 
 #desktop-menu a:hover {
-  color: orange;
+  color: #7ccaee;
+  color: radial-gradient(circle, #7ccaee 0%, #1a323d 78%, #020024 100%);
 }
 
 .atags-desktop-menu {
@@ -278,33 +279,73 @@ a {
 }
 /** fade-in **/
 .fade-in {
-  animation: fadeIn ease 2s;
-  -webkit-animation: fadeIn ease 2s;
-  -moz-animation: fadeIn ease 2s;
-  -o-animation: fadeIn ease 2s;
-  -ms-animation: fadeIn ease 2s;
+  animation: fadeIn ease 5.8s;
+  -webkit-animation: fadeIn ease 5.8s;
+  -moz-animation: fadeIn ease 5.8s;
+  -o-animation: fadeIn ease 5.8s;
+  -ms-animation: fadeIn ease 5.8s;
 }
 
 @keyframes fadeIn {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 @-moz-keyframes fadeIn {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+/******/
+@keyframes fadeIn2 {
+  0% {
     opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn2 2s ease-in;
+  animation-name: fadeIn2 2s ease-in;
+}
+
+/** fade-in-slow **/
+.fade-in-slow {
+  animation: fadeIn ease 8s;
+  -webkit-animation: fadeIn ease 8s;
+  -moz-animation: fadeIn ease 8s;
+  -o-animation: fadeIn ease 8s;
+  -ms-animation: fadeIn ease 8s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /** flip **/
 .app {
   font-family: Lato, sans-serif;
   margin-left: 9%;
+  padding: 80px;
   overflow: hidden;
 }
 
@@ -350,7 +391,7 @@ a {
 }
 
 .detail {
-  color: white;
+  /*   color: white;
   transform-origin: top left;
   display: flex;
   flex-direction: column;
@@ -358,6 +399,15 @@ a {
   position: absolute;
   top: 331vh;
   left: 41vw;
+  z-index: 9; */
+  color: white;
+  transform-origin: top left;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  position: absolute;
+  top: 2400px;
+  left: 28vw;
   z-index: 9;
 }
 .detail > img {
@@ -445,6 +495,11 @@ html {
 /* noscroll */
 .noscroll {
   overflow: hidden;
+}
+
+.scroll {
+  overflow: scroll;
+  scroll-behavior: smooth;
 }
 
 /* General Styles */
@@ -1126,7 +1181,6 @@ button:focus {
 
 .description2 {
   margin-top: -60px;
-  margin-bottom: 40px;
 }
 
 /* Section-4 Styles */
@@ -1820,6 +1874,7 @@ footer .col-2 ul li {
     font-family: Lato, sans-serif;
     overflow: hidden;
     margin-left: 0;
+    padding: 0;
   }
 
   .scene.-gallery {
@@ -1835,11 +1890,20 @@ footer .col-2 ul li {
     transform-origin: top left;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 65%;
     position: fixed;
-    top: 10vh;
-    left: 0vw;
-    overflow: hidden;
+    top: 0%;
+    left: 20vw;
+    overflow: scroll;
+  }
+
+  .item > img {
+    height: auto;
+    width: 75%;
+    margin: 0 auto;
+    margin-left: 47px;
+    margin-top: -6px;
+    filter: brightness(0.6);
   }
 
   body > main > section.section-1 > div:nth-child(4) > div.col-5 > div > p {

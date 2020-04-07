@@ -4,6 +4,7 @@ $app-height: 90vmin;
 .app {
   font-family: Lato, sans-serif;
   margin-left: 9%;
+  padding: 80px;
 
   overflow: hidden;
 }
@@ -55,7 +56,7 @@ $app-height: 90vmin;
 }
 
 .detail {
-  color: white;
+  /*   color: white;
   transform-origin: top left;
   display: flex;
   flex-direction: column;
@@ -63,6 +64,16 @@ $app-height: 90vmin;
   position: absolute;
   top: 331vh;
   left: 41vw;
+  z-index: 9; */
+
+  color: white;
+  transform-origin: top left;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  position: absolute;
+  top: 2400px;
+  left: 28vw;
   z-index: 9;
 
   > img {

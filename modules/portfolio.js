@@ -2,17 +2,25 @@
 
 window.addEventListener("DOMContentLoaded", init);
 
-function init() {
+export function init() {
   console.log(init);
-  /*   document.querySelector("body > main > section.section-3 > div").style.margin = "0px"; */
+
+  document.querySelector("#welcometxt").classList.add("fade-in");
+  document.querySelector(".welcomename").classList.add("fade-in-slow");
+  document.querySelector("#welcomescreen > div > p").classList.add("animated", "fadeIn");
+  document.querySelector("#welcomescreen > div > p").classList.remove("animated", "fadeIn");
+  document.querySelector(".continuetoportfolio").classList.add("animated", "flip");
 
   document.querySelector("#welcomescreen > div > p").addEventListener("click", removeWelcome);
 }
 
 function removeWelcome() {
+  document.querySelector(".continuetoportfolio").classList.remove("animated", "flip");
+
+  document.querySelector(".continuetoportfolio").classList.add("animated", "flipOutY");
   document.querySelector(".hero").classList.add("fade-out");
 
-  setTimeout(removeWelcomeScreen, 1980);
+  setTimeout(removeWelcomeScreen, 980);
 }
 
 function removeWelcomeScreen() {

@@ -109,7 +109,6 @@ items.forEach(item => {
 
     detailScene.style.display = "block";
     item.style.opacity = 0;
-    body.classList.add("noscroll");
 
     let firstRect = itemImage.getBoundingClientRect();
     let lastRect = detailItem.getBoundingClientRect();
