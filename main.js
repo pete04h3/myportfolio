@@ -64,43 +64,45 @@ items.forEach(item => {
     if (detailItem.dataset.image == "owl") {
       console.log("animation");
       titel.textContent = "ANIMATION";
-      tekst.textContent = "lolololololol lolololololol lolololololol lolololololol lolololololol";
+      tekst.textContent = "This project was an assignment from the Danish Musuem of Science & Technology. They wanted an intuitive infographic solution, that would enlighten the user about the impacts of the invention of the light bulb";
       link.href = "https://lisabianca.dk/kea/11-frontend/light_bulb/";
     }
 
     if (detailItem.dataset.image == "deer") {
       console.log("koga");
       titel.textContent = "KOGA";
-      tekst.textContent = "lolololololol lolololololol lolololololol lolololololol lolololololol";
-      link.href = "https://lisabianca.dk/kea/11-frontend/light_bulb/";
+      tekst.textContent = "Koga is a Dutch bicycle manufacturer based in Heerenveen, Netherlands. The company is well known for its long time partnership with Japanese frame manufacturer Miyata, producing bicycles and sponsoring racing teams under the brand name Koga Miyata.";
+      link.href = "http://www.mostvalue.dk/Koga/";
     }
 
     if (detailItem.dataset.image == "hipster") {
       console.log("kiteai");
       titel.textContent = "KITEAI";
-      tekst.textContent = "lolololololol lolololololol lolololololol lolololololol lolololololol";
-      link.href = "https://lisabianca.dk/kea/11-frontend/light_bulb/";
+      tekst.textContent = "KiteAI is a company that gathers information leads for big companys so their sales team doesn't have to. This way, the company can focus on selling their product, instead of harvesting sales leads. They needed a simple onepager to visualize their identity.";
+      link.href = "http://www.cauliflower.dk/kea/3-semester/afleveringer/wiseflow/KiteAI-Code/";
     }
 
     if (detailItem.dataset.image == "ram") {
       console.log("luibh");
       titel.textContent = "LUIBH";
-      tekst.textContent = "lolololololol lolololololol lolololololol lolololololol lolololololol";
-      link.href = "https://lisabianca.dk/kea/11-frontend/light_bulb/";
+      tekst.textContent =
+        "Luibh skincare is one of the most advanced websites I have build. Luibh is naturistic skincare company based in Ireland. Their mission is to stand up to the big cosmetics companies, all products are naturally made out of herbs, with no added chemicals or parabenes. (still in progress)";
+      link.href = "";
     }
 
     if (detailItem.dataset.image == "dog") {
       console.log("statumanu");
       titel.textContent = "STATUMANU";
-      tekst.textContent = "lolololololol lolololololol lolololololol lolololololol lolololololol";
-      link.href = "https://lisabianca.dk/kea/11-frontend/light_bulb/";
+      tekst.textContent =
+        "Statumanu is developing Vessle track, for the healthcare industry. They wanted an application that could provide information about ICP, Internal Cranium Pressure, in a simple visualization for doctors, and nurses. I decided to make a dashboard that would contain all the information with simple navigation, this is made in colaboration with bootstrap & Creative Tim";
+      link.href = "http://www.cauliflower.dk/kea/3-semester/afleveringer/wiseflow/black-dashboard-master/examples/dashboard.html";
     }
 
     if (detailItem.dataset.image == "ram-side") {
       console.log("euroman");
       titel.textContent = "EUROMAN";
-      tekst.textContent = "lolololololol lolololololol lolololololol lolololololol lolololololol";
-      link.href = "https://lisabianca.dk/kea/11-frontend/light_bulb/";
+      tekst.textContent = "Euroman did a commercial for their product and asked if I could provide with a music production that would enhance and support the digital content shown in a 2-3 min videographic. This is what we came up with";
+      link.href = "https://www.youtube.com/watch?v=ot845DQy6gM&feature=youtu.be&fbclid=IwAR35doR1qF-WFRwyWgU-xKfbhnesXOnCVDmToI40nrzreYDxAujDGy7l6Pc";
     }
 
     detailItem.querySelector("img").setAttribute("src", itemImage.getAttribute("src"));
