@@ -1378,7 +1378,9 @@ footer {
     flex-wrap: wrap;
     align-items: flex-start;
     padding: 0;
-    display: contents;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
   }
 
   .detail {
