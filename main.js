@@ -87,7 +87,7 @@ items.forEach(item => {
       titel.textContent = "LUIBH";
       tekst.textContent =
         "Luibh skincare is one of the most advanced websites I have build. Luibh is naturistic skincare company based in Ireland. Their mission is to stand up to the big cosmetics companies, all products are naturally made out of herbs, with no added chemicals or parabenes. (still in progress)";
-      link.href = "https://drive.google.com/drive/folders/1cc-6dVVRvldR27zMcW2L0otr9CDF5_UP?ths=true";
+      link.href = "https://drive.google.com/file/d/1W1OqP20QBZAcKwgc0GJwAGgBpHjfuuMM/view?usp=sharing";
     }
 
     if (detailItem.dataset.image == "dog") {
