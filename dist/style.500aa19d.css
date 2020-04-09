@@ -422,7 +422,6 @@ a {
   background: #232323;
   line-height: 43px;
   flex: 1 0 auto;
-  padding: 2rem 1.5rem;
   animation: slide-down 0.6s ease-in-out;
 }
 @keyframes slide-down {
@@ -1744,9 +1743,10 @@ footer .col-2 ul li {
     display: flex;
     flex-direction: column;
     width: 40%;
+    height: 40%;
     position: fixed;
-    top: 20vh;
     left: 30vw;
+    height: 80%;
   }
 
   .contactcontainer .inner .panel.panel-right .panel-content .form {
