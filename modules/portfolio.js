@@ -10,6 +10,7 @@ export function init() {
   document.querySelector(".welcomename").classList.add("fade-in-slow");
   document.querySelector("#welcomescreen > div > p").classList.add("animated", "fadeIn");
   document.querySelector("#welcomescreen > div > p").classList.remove("animated", "fadeIn");
+
   document.querySelector(".continuetoportfolio").classList.add("animated", "flip");
 
   document.querySelector("#welcomescreen > div > p").addEventListener("click", removeWelcome);

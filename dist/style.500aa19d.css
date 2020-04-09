@@ -1048,7 +1048,7 @@ button:focus {
 
 .welcomename {
   color: seashell;
-  letter-spacing: 15px;
+  letter-spacing: 1.3vw;
   font-size: 20px;
   grid-column: 1/span 16;
   grid-row: 3/span 16;
@@ -1938,13 +1938,12 @@ footer .col-2 ul li {
 
   .welcomename {
     color: seashell;
-    letter-spacing: 2vw;
+    letter-spacing: 1vw;
     font-size: 20px;
-    grid-column: 3/span 14;
+    grid-column: 4/span 14;
     grid-row: 3/span 14;
     width: 100%;
     margin: 0 auto;
-    margin-left: -14px;
   }
 
   #welcometxt {
