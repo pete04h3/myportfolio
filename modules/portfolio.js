@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", init);
 
 export function init() {
   console.log(init);
+  document.querySelector("html").classList.add("noscroll");
 
   document.querySelector("#welcometxt").classList.add("fade-in");
   document.querySelector(".welcomename").classList.add("fade-in-slow");
@@ -27,4 +28,5 @@ function removeWelcomeScreen() {
   document.querySelector("#welcomescreen").classList.add("hide");
 
   document.querySelector(".hero").style.zIndex = "-8";
+  document.querySelector("html").classList.remove("noscroll");
 }

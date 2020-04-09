@@ -22,7 +22,7 @@ toggler.addEventListener("click", () => {
   atags.classList.toggle("fade-in-left");
   mobilelogo.classList.toggle("rotateAnimation");
   menu.classList.toggle("active");
-  body.classList.toggle("noscroll");
+  atags.classList.toggle("active");
 });
 
 (function(i, s, o, g, r, a, m) {
@@ -108,7 +108,9 @@ items.forEach(item => {
     detailItem.querySelector("img").setAttribute("src", itemImage.getAttribute("src"));
 
     detailScene.style.display = "block";
+    detailItem.classList.add("scene");
     item.style.opacity = 0;
+    body.classList.add("noscroll");
 
     let firstRect = itemImage.getBoundingClientRect();
     let lastRect = detailItem.getBoundingClientRect();
@@ -145,6 +147,7 @@ detailItem.addEventListener("click", () => {
   let detailItemRect = detailItem.getBoundingClientRect();
 
   detailScene.style.display = "none";
+  detailItem.classList.remove("scene");
   itemImage.style.opacity = 1;
   body.classList.remove("noscroll");
 

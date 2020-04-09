@@ -147,6 +147,7 @@ window.addEventListener("DOMContentLoaded", init);
 
 function init() {
   console.log(init);
+  document.querySelector("html").classList.add("noscroll");
   document.querySelector("#welcometxt").classList.add("fade-in");
   document.querySelector(".welcomename").classList.add("fade-in-slow");
   document.querySelector("#welcomescreen > div > p").classList.add("animated", "fadeIn");
@@ -165,6 +166,7 @@ function removeWelcome() {
 function removeWelcomeScreen() {
   document.querySelector("#welcomescreen").classList.add("hide");
   document.querySelector(".hero").style.zIndex = "-8";
+  document.querySelector("html").classList.remove("noscroll");
 }
 },{}],"main.js":[function(require,module,exports) {
 "use strict";
@@ -193,7 +195,7 @@ toggler.addEventListener("click", function () {
   atags.classList.toggle("fade-in-left");
   mobilelogo.classList.toggle("rotateAnimation");
   menu.classList.toggle("active");
-  body.classList.toggle("noscroll");
+  atags.classList.toggle("active");
 });
 
 (function (i, s, o, g, r, a, m) {
@@ -269,7 +271,9 @@ items.forEach(function (item) {
 
     detailItem.querySelector("img").setAttribute("src", itemImage.getAttribute("src"));
     detailScene.style.display = "block";
+    detailItem.classList.add("scene");
     item.style.opacity = 0;
+    body.classList.add("noscroll");
     var firstRect = itemImage.getBoundingClientRect();
     var lastRect = detailItem.getBoundingClientRect();
     detailItem.animate([{
@@ -287,6 +291,7 @@ detailItem.addEventListener("click", function () {
   var itemImageRect = itemImage.getBoundingClientRect();
   var detailItemRect = detailItem.getBoundingClientRect();
   detailScene.style.display = "none";
+  detailItem.classList.remove("scene");
   itemImage.style.opacity = 1;
   body.classList.remove("noscroll");
   itemImage.animate([{
@@ -328,7 +333,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61759" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49869" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

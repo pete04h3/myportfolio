@@ -71,10 +71,10 @@ $app-height: 90vmin;
   transform-origin: top left;
   display: flex;
   flex-direction: column;
-  width: 20%;
-  position: absolute;
-  top: 2400px;
-  left: 28vw;
+  width: 25%;
+  position: fixed;
+  top: 0vh;
+  left: 37vw;
   z-index: 9;
 
   > img {
@@ -101,10 +101,6 @@ $app-height: 90vmin;
       }
     }
 
-    > * {
-      margin-bottom: 1rem;
-    }
-
     > .title {
       font-size: 2rem;
       text-transform: uppercase;
@@ -112,11 +108,12 @@ $app-height: 90vmin;
 
     > .creator {
       opacity: 0.6;
-      margin-top: -0.5rem;
+      margin-top: -10px;
     }
 
     > .description {
       line-height: 1.5;
+      margin-top: -30px;
     }
   }
 }

@@ -405,10 +405,10 @@ a {
   transform-origin: top left;
   display: flex;
   flex-direction: column;
-  width: 20%;
-  position: absolute;
-  top: 2400px;
-  left: 28vw;
+  width: 25%;
+  position: fixed;
+  top: 0vh;
+  left: 37vw;
   z-index: 9;
 }
 .detail > img {
@@ -433,19 +433,17 @@ a {
     transform: translateY(0);
   }
 }
-.detail > .content > * {
-  margin-bottom: 1rem;
-}
 .detail > .content > .title {
   font-size: 2rem;
   text-transform: uppercase;
 }
 .detail > .content > .creator {
   opacity: 0.6;
-  margin-top: -0.5rem;
+  margin-top: -10px;
 }
 .detail > .content > .description {
   line-height: 1.5;
+  margin-top: -30px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -511,10 +509,6 @@ body {
   line-height: 26px;
   background: #020024;
   background: radial-gradient(circle, #020024 0%, #020419 23%, #13484f 100%);
-}
-
-.noscroll {
-  overflow: hidden;
 }
 
 h1 {
@@ -1181,7 +1175,7 @@ button:focus {
 }
 
 .description2 {
-  margin-top: -60px;
+  margin-top: 0px;
 }
 
 /* Section-4 Styles */
@@ -1888,16 +1882,21 @@ footer .col-2 ul li {
     grid-gap: 1rem;
   }
 
+  .scene.-detail {
+    overflow-y: scroll;
+  }
+
   .detail {
     color: white;
-    transform-origin: top left;
+    transform-origin: top center;
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 70%;
+    height: 70%;
     position: fixed;
     top: 0%;
-    left: 20vw;
-    overflow: scroll;
+    left: 17vw;
+    overflow-y: scroll;
   }
 
   .item > img {
@@ -1939,7 +1938,7 @@ footer .col-2 ul li {
 
   .welcomename {
     color: seashell;
-    letter-spacing: 8px;
+    letter-spacing: 2vw;
     font-size: 20px;
     grid-column: 3/span 14;
     grid-row: 3/span 14;

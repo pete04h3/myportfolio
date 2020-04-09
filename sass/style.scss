@@ -57,10 +57,6 @@ body {
   background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(2, 4, 25, 1) 23%, rgba(19, 72, 79, 1) 100%);
 }
 
-.noscroll {
-  overflow: hidden;
-}
-
 h1 {
   font-weight: 300;
   font-size: 3.75em;
@@ -713,7 +709,7 @@ button:focus {
 }
 
 .description2 {
-  margin-top: -60px;
+  margin-top: 0px;
 }
 
 /* Section-4 Styles */
@@ -1383,16 +1379,21 @@ footer {
     grid-gap: 1rem;
   }
 
+  .scene.-detail {
+    overflow-y: scroll;
+  }
+
   .detail {
     color: white;
-    transform-origin: top left;
+    transform-origin: top center;
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 70%;
+    height: 70%;
     position: fixed;
     top: 0%;
-    left: 20vw;
-    overflow: scroll;
+    left: 17vw;
+    overflow-y: scroll;
   }
 
   .item > img {
@@ -1434,7 +1435,7 @@ footer {
 
   .welcomename {
     color: seashell;
-    letter-spacing: 8px;
+    letter-spacing: 2vw;
     font-size: 20px;
     grid-column: 3 / span 14;
     grid-row: 3 / span 14;
