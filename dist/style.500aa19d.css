@@ -1574,6 +1574,15 @@ footer h4 {
     display: block;
   }
 }
+@media only screen and (max-width: 1438px) {
+  body > main > section.section-1 > div:nth-child(4) > img {
+    display: none;
+  }
+
+  #phoneoverlay {
+    display: none;
+  }
+}
 @media only screen and (min-width: 1800px) {
   body {
     font-size: 18px;
