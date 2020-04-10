@@ -1037,7 +1037,7 @@ button:focus {
 }
 
 .welcometxt {
-  grid-column: 1/span 16;
+  grid-column: 3/span 13;
   grid-row: 7/span 3;
 }
 
@@ -1049,18 +1049,17 @@ button:focus {
   color: seashell;
   letter-spacing: 1.3vw;
   font-size: 20px;
-  grid-column: 1/span 16;
+  grid-column: 2/span 15;
   grid-row: 3/span 16;
-  margin-left: 46px;
 }
 
 .continuetoportfolio {
   color: seashell;
   font-size: 12px;
-  grid-column: 1/span 16;
+  grid-column: 2/span 14;
   grid-row: 6/span 16;
   text-transform: uppercase;
-  margin-left: 5px;
+  margin-left: 40px;
   font-weight: bold;
 }
 
@@ -1944,6 +1943,16 @@ footer .col-2 ul li {
     grid-row: 3/span 14;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .continuetoportfolio {
+    color: seashell;
+    font-size: 12px;
+    grid-column: 2/span 14;
+    grid-row: 6/span 16;
+    text-transform: uppercase;
+    margin-left: 5px;
+    font-weight: bold;
   }
 
   #welcometxt {
