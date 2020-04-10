@@ -167,6 +167,12 @@ function removeWelcomeScreen() {
   document.querySelector("#welcomescreen").classList.add("hide");
   document.querySelector(".hero").style.zIndex = "-8";
   document.querySelector("html").classList.remove("noscroll");
+  skewRotate();
+}
+
+function skewRotate() {
+  var overlay = document.querySelector("#phoneoverlay");
+  overlay.classList.add("skew");
 }
 },{}],"main.js":[function(require,module,exports) {
 "use strict";
@@ -190,12 +196,19 @@ var menu = document.querySelector(".mobile-menu-dropdown");
 var atags = document.querySelector(".atags-mobile-menu");
 var mobilelogo = document.querySelector(".mobile-logo");
 var body = document.querySelector("body");
+var mAtags = document.querySelectorAll(".atags-mobile-menu > li > a");
 toggler.addEventListener("click", function () {
   toggler.classList.toggle("active");
   atags.classList.toggle("fade-in-left");
   mobilelogo.classList.toggle("rotateAnimation");
   menu.classList.toggle("active");
-  atags.classList.toggle("active");
+});
+mAtags.forEach(function (a) {
+  a.addEventListener("click", function () {
+    atags.classList.toggle("fade-in-left");
+    toggler.classList.toggle("active");
+    menu.classList.toggle("active");
+  });
 });
 
 (function (i, s, o, g, r, a, m) {
@@ -333,7 +346,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51571" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61547" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

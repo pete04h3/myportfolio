@@ -16,13 +16,21 @@ const menu = document.querySelector(".mobile-menu-dropdown");
 const atags = document.querySelector(".atags-mobile-menu");
 const mobilelogo = document.querySelector(".mobile-logo");
 const body = document.querySelector("body");
+const mAtags = document.querySelectorAll(".atags-mobile-menu > li > a");
 
 toggler.addEventListener("click", () => {
   toggler.classList.toggle("active");
   atags.classList.toggle("fade-in-left");
   mobilelogo.classList.toggle("rotateAnimation");
   menu.classList.toggle("active");
-  atags.classList.toggle("active");
+});
+
+mAtags.forEach(a => {
+  a.addEventListener("click", () => {
+    atags.classList.toggle("fade-in-left");
+    toggler.classList.toggle("active");
+    menu.classList.toggle("active");
+  });
 });
 
 (function(i, s, o, g, r, a, m) {
