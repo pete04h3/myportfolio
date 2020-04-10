@@ -172,6 +172,8 @@ function removeWelcomeScreen() {
 
 function skewRotate() {
   var overlay = document.querySelector("#phoneoverlay");
+  var iphone = document.querySelector("body > main > section.section-1 > div:nth-child(4) > div.col-7.phone-img > img");
+  iphone.classList.add("skew");
   overlay.classList.add("skew");
 }
 },{}],"main.js":[function(require,module,exports) {
@@ -346,7 +348,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61547" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57197" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

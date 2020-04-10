@@ -134,11 +134,18 @@
 }
 
 /** skew rotate **/
+
+.iphone {
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+}
 #phoneoverlay {
   display: inline-block;
   background: linear-gradient(180deg, #ff8a00, #e52e71);
-  height: 100px;
-  width: 100px;
+  background-image: url("/static/1x/uxsignup.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   font-size: 1px;
   padding: 1px;
   color: white;
@@ -147,8 +154,14 @@
   animation: skew 3s infinite;
   transform: skew(20deg);
   animation-direction: alternate;
-  opacity: 0.7;
-  border: 7px solid seashell;
+  /* opacity: 0.7; */
+  position: absolute;
+  width: 100px;
+  height: 164px;
+  left: 34.12vw;
+  top: 460px;
+  z-index: 9;
+  border-radius: 3%;
 }
 
 @keyframes skew {

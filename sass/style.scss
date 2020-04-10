@@ -47,20 +47,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Iphone overlay */
-
-#phoneoverlay {
-  background-color: darkgrey;
-  position: absolute;
-  width: 100px;
-  height: 190px;
-  left: 34.5vw;
-  top: 484px;
-  z-index: 9;
-  border-radius: 10%;
-  transform: skew(2deg);
-}
-
 /* General Styles */
 body {
   margin: 0 auto;
