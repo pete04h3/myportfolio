@@ -39,9 +39,8 @@ a {
 }
 
 .mobile-logo img {
-  width: 300px;
-  position: absolute;
-  filter: hue-rotate(-82deg);
+  width: 100px;
+  margin: 0 auto;
   opacity: 80%;
   transform: rotate3d(6, 7, 5, 45deg);
   background-color: black;
@@ -66,7 +65,7 @@ a {
 }
 
 .atags-mobile-menu a:hover {
-  color: orange;
+  color: skyblue;
   text-decoration: underline;
 }
 
@@ -526,6 +525,11 @@ html {
 /* hide */
 .hide {
   display: none;
+}
+
+/*show*/
+.show {
+  display: block;
 }
 
 /* noscroll */

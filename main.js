@@ -14,15 +14,17 @@ import { init } from "./modules/portfolio";
 const toggler = document.querySelector(".menu__toggler");
 const menu = document.querySelector(".mobile-menu-dropdown");
 const atags = document.querySelector(".atags-mobile-menu");
-const mobilelogo = document.querySelector(".mobile-logo");
+const mobilelogo = document.querySelector(".mobile-logo > img");
 const body = document.querySelector("body");
 const mAtags = document.querySelectorAll(".atags-mobile-menu > li > a");
 
 toggler.addEventListener("click", () => {
   toggler.classList.toggle("active");
   atags.classList.toggle("fade-in-left");
+  mobilelogo.classList.toggle("show");
   mobilelogo.classList.toggle("rotateAnimation");
   menu.classList.toggle("active");
+  body.classList.toggle("noscroll");
 });
 
 mAtags.forEach(a => {
@@ -30,6 +32,7 @@ mAtags.forEach(a => {
     atags.classList.toggle("fade-in-left");
     toggler.classList.toggle("active");
     menu.classList.toggle("active");
+    body.classList.toggle("scroll");
   });
 });
 

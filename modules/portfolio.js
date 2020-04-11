@@ -4,6 +4,7 @@ window.addEventListener("DOMContentLoaded", init);
 
 export function init() {
   console.log(init);
+  document.querySelector(".mobile-logo > img").classList.add("hide");
   document.querySelector("html").classList.add("noscroll");
 
   document.querySelector("#welcometxt").classList.add("fade-in");

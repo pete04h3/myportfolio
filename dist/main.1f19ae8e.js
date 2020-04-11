@@ -147,6 +147,7 @@ window.addEventListener("DOMContentLoaded", init);
 
 function init() {
   console.log(init);
+  document.querySelector(".mobile-logo > img").classList.add("hide");
   document.querySelector("html").classList.add("noscroll");
   document.querySelector("#welcometxt").classList.add("fade-in");
   document.querySelector(".welcomename").classList.add("fade-in-slow");
@@ -196,20 +197,23 @@ var _portfolio = require("./modules/portfolio");
 var toggler = document.querySelector(".menu__toggler");
 var menu = document.querySelector(".mobile-menu-dropdown");
 var atags = document.querySelector(".atags-mobile-menu");
-var mobilelogo = document.querySelector(".mobile-logo");
+var mobilelogo = document.querySelector(".mobile-logo > img");
 var body = document.querySelector("body");
 var mAtags = document.querySelectorAll(".atags-mobile-menu > li > a");
 toggler.addEventListener("click", function () {
   toggler.classList.toggle("active");
   atags.classList.toggle("fade-in-left");
+  mobilelogo.classList.toggle("show");
   mobilelogo.classList.toggle("rotateAnimation");
   menu.classList.toggle("active");
+  body.classList.toggle("noscroll");
 });
 mAtags.forEach(function (a) {
   a.addEventListener("click", function () {
     atags.classList.toggle("fade-in-left");
     toggler.classList.toggle("active");
     menu.classList.toggle("active");
+    body.classList.toggle("scroll");
   });
 });
 
@@ -348,7 +352,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61547" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51835" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
