@@ -41,8 +41,8 @@ a {
 .mobile-logo img {
   width: 100px;
   margin: 0 auto;
+  background-color: transparent;
   transform: rotate3d(6, 7, 5, 45deg);
-  background-color: black;
   animation-name: fade-in-right;
 }
 
@@ -1900,7 +1900,10 @@ footer .col-2 ul li {
 
   .section-1 {
     color: seashell;
-    height: 100vh;
+  }
+
+  .section-1 aside {
+    padding: 1em 0 1em 0;
   }
 
   .scene {
@@ -1968,6 +1971,7 @@ footer .col-2 ul li {
 
   body > main > section.section-1 > div:nth-child(4) > div.col-5 > p {
     line-height: 28px;
+    margin-top: -40px;
   }
 
   .contactbtn {

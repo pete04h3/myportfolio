@@ -37,8 +37,8 @@ a {
 .mobile-logo img {
   width: 100px;
   margin: 0 auto;
+  background-color: transparent;
   transform: rotate3d(6, 7, 5, 45deg);
-  background-color: black;
   animation-name: fade-in-right;
 }
 
