@@ -31,12 +31,4 @@ function removeWelcomeScreen() {
 
   document.querySelector(".hero").style.zIndex = "-8";
   document.querySelector("html").classList.remove("noscroll");
-  skewRotate();
-}
-
-function skewRotate() {
-  const overlay = document.querySelector("#phoneoverlay");
-  const iphone = document.querySelector("body > main > section.section-1 > div:nth-child(4) > img");
-  iphone.classList.add("skew");
-  overlay.classList.add("skew");
 }
