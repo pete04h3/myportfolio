@@ -4,47 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="sass/style.scss" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" />
     <title>Document</title>
   </head>
   <body>
-    <nav class="nav-list">
+    <div class="menu">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <a href="#"> <li>Home</li></a>
+        <a href="#"> <li>About</li></a>
+        <a href="#"> <li>Contact</li></a>
       </ul>
-    </nav>
-
-    <div class="container-wrapper">
-      <nav class="nav-wrapper">
-        <div class="nav-bar">
-          <div class="bar-line"></div>
-          <div class="bar-line"></div>
-          <div class="bar-line"></div>
-        </div>
-      </nav>
-
-      <div class="hero-img"></div>
-
-      <div class="hero-content">
-        <h1>TO MY</h1>
-        <h2>PORTFOLIO</h2>
-        <p>”Webdesign. UI. UX. Photography. Filmproduction. Graphic design. & much more” ~ name here</p>
-        <ul class="social-media">
-          <li>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-        </ul>
-      </div>
     </div>
 
+    <div class="menu__toggler"><span></span></div>
+    <nav id="leftsidebar"></nav>
+    <nav id="rightsidebar"></nav>
+    <main></main>
+
+    <footer>
+      <section class="social" id="social">
+        <ul class="social-links text-center" style="display: flex; justify-content: center;">
+          <li>
+            <a class="facebook" href="#" title="Facebook" target="_blank"><i class="fa fa-facebook-square"></i></a>
+          </li>
+          <li>
+            <a class="linkedin" href="#" title="LinkedIn" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+          </li>
+          <li>
+            <a class="codepen" href="#" title="Codepen" target="_blank"><i class="fa fa-instagram"></i></a>
+          </li>
+          <li>
+            <a class="github" href="#" title="Github" target="_blank"><i class="fa fa-github"></i></a>
+          </li>
+          <li>
+            <a class="freecodecamp" href="#" title="Free Code Camp" target="_blank"><i class="fa fa-codepen"></i></a>
+          </li>
+        </ul>
+        <div class="contribution text-center">
+          <p style="color: seashell; font-size: 12px; text-align: center;"><i class="fa fa-code"></i> by peterp4N1K</p>
+        </div>
+      </section>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>

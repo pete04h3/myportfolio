@@ -142,10 +142,33 @@ function createElement(type) {
 var _gallery = require("./modules/gallery");
 
 "use strict";
+/* const data = [
+  {
+    i: "",
+  },
+]; */
 
-var data = [{
-  i: ""
-}];
+
+var toggler = document.querySelector(".menu__toggler");
+var menu = document.querySelector(".menu");
+toggler.addEventListener("click", function () {
+  toggler.classList.toggle("active");
+  menu.classList.toggle("active");
+});
+
+(function (i, s, o, g, r, a, m) {
+  i["GoogleAnalyticsObject"] = r;
+  i[r] = i[r] || function () {
+    (i[r].q = i[r].q || []).push(arguments);
+  }, i[r].l = 1 * new Date();
+  a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m);
+})(window, document, "script", "//www.google-analytics.com/analytics.js", "ga");
+
+ga("create", "UA-46156385-1", "cssscript.com");
+ga("send", "pageview");
 },{"./modules/gallery":"modules/gallery.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -174,7 +197,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51858" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50247" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
