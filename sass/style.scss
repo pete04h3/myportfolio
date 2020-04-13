@@ -1,23 +1,4 @@
 @use 'partials/var';
 @use 'partials/header';
 @use 'partials/mixins';
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background-color: var.$bg-color;
-  @include mixins.gridD();
-  h1 {
-    @include mixins.defaultBorder();
-    @include mixins.center();
-    @include mixins.padding();
-    @include mixins.marginTopBottom();
-    color: black;
-    &:hover {
-      color: white;
-    }
-  }
-}
+@use 'partials/nav';
