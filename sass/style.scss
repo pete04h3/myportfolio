@@ -48,6 +48,26 @@ h1 {
   background-color: black;
 }
 
+#rightsidebar img {
+  width: 60px;
+  /* padding: 10px; */
+  transform: scale(0.5);
+  position: fixed;
+  right: -8px;
+}
+
+/*blur*/
+
+.blurease {
+  filter: blur(10px);
+  transition: 0.5 ease-in-out;
+}
+
+.blur {
+  filter: blur(20px);
+  transition: 0.2 ease-in-out;
+}
+
 /* footer */
 
 footer {
@@ -112,22 +132,242 @@ footer {
   color: darkgreen;
 }
 
+/* drone gif*/
+
+.drone {
+  width: 100px;
+  height: 100px;
+  /*NBS! If background-image doesn't work the actual GIF is located in the folder static*/
+  /*   background-image: url("https://cdn.clipart.email/199661771b0eeb26e2e1d86e6e75b332_vector-drones-animated-gif-transparent-png-clipart-free-download-_500-281.gif"); */
+  background-image: url(/static/drone.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  filter: drop-shadow(2px 4px 6px black);
+  z-index: 999;
+}
+
+.drone:hover {
+  transform: scale(0.5);
+  transition: 0.8s ease;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+/* drone animations */
+
+.skewing {
+  animation: skewing 2s 1.5s ease-in-out infinite;
+}
+
+.skewing-child {
+  animation: skewing-child 0.2s ease-in-out infinite alternate;
+}
+
+.moving {
+  animation: moving 6.6s cubic-bezier(0.97, 0.01, 0.12, 0.99) infinite alternate;
+  top: 65px;
+  transition: 0.5s ease;
+}
+
+.squishing {
+  animation: squishing 1s ease-in-out infinite alternate;
+}
+
+.hoverUp {
+  animation: hoverUp 2s ease-in-out infinite alternate;
+}
+
+@keyframes hoverUp {
+  0% {
+    top: 0;
+  }
+
+  30% {
+    top: -80px;
+  }
+
+  100% {
+    top: 100px;
+  }
+}
+
+@keyframes skewing {
+  0% {
+    transform: skewX(6deg);
+  }
+  10% {
+    transform: skewX(-6deg);
+  }
+  20% {
+    transform: skewX(4deg);
+  }
+  30% {
+    transform: skewX(-4deg);
+  }
+  40% {
+    transform: skewX(2deg);
+  }
+  50% {
+    transform: skewX(-6deg);
+  }
+  55% {
+    transform: skewX(6deg);
+  }
+  60% {
+    transform: skewX(-5deg);
+  }
+  65% {
+    transform: skewX(5deg);
+  }
+  70% {
+    transform: skewX(-4deg);
+  }
+  75% {
+    transform: skewX(4deg);
+  }
+  80% {
+    transform: skewX(-3deg);
+  }
+  85% {
+    transform: skewX(3deg);
+  }
+  90% {
+    transform: skewX(-2deg);
+  }
+  95% {
+    transform: skewX(2deg);
+  }
+  100% {
+    transform: skewX(1deg);
+  }
+}
+
+@keyframes skewing-child {
+  0% {
+    transform: skewX(-10deg);
+  }
+  100% {
+    transform: skewX(10deg);
+  }
+}
+
+@keyframes moving {
+  0% {
+    transform: translate(-200px);
+  }
+  30% {
+    transform: translate(-45px);
+  }
+  70% {
+    transform: translate(45px);
+  }
+  100% {
+    transform: translate(200px);
+  }
+}
+
+@keyframes squishing {
+  10%,
+  40%,
+  80% {
+    transform: scale(1, 0.9);
+  }
+  0%,
+  30%,
+  60%,
+  100% {
+    transform: scale(0.9, 1);
+  }
+}
+
 /*Main h1*/
 
 main h1 {
-  color: antiquewhite;
+  font-family: p22-zaner-pro-four, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: white;
+  filter: brightness(0.7);
   margin: 0 auto;
   position: fixed;
-  left: 0;
-  font-size: 320px;
-  font-family: monospace;
+  left: -20px;
+  top: -80px;
+  font-size: 620px;
   transform: skewX(10deg);
   padding: 26px;
-  opacity: 0.6;
+}
+
+/* fadeIN */
+
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /* canvas AKA BIG SLIME BLACK DOT IN MIDDLE*/
 canvas {
   filter: drop-shadow(-2px 1px 60px black);
+  opacity: 15%;
+  z-index: 2;
+}
+
+canvas:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 /*bubble1 header*/

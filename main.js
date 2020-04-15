@@ -1,5 +1,6 @@
 import { gallery as myImgs } from "./modules/gallery";
 import { bubble } from "./modules/bubble";
+import { drone } from "./modules/drone";
 
 ("use strict");
 
@@ -10,11 +11,28 @@ import { bubble } from "./modules/bubble";
 ]; */
 
 const toggler = document.querySelector(".menu__toggler");
+const close = document.querySelector(".menu__toggler.active > span::after");
 const menu = document.querySelector(".menu");
+const blur = document.querySelector("main");
+const canvas = document.querySelector("canvas");
+const droNebox = document.querySelector("body > div.drone");
+
+droNebox.addEventListener("click", () => {
+  droNebox.classList.add("hoverUp");
+  droNebox.addEventListener("click", () => {
+    droNebox.classList.remove("hoverUp");
+    location.reload();
+  });
+});
 
 toggler.addEventListener("click", () => {
   toggler.classList.toggle("active");
   menu.classList.toggle("active");
+  blur.classList.toggle("blur");
+  canvas.classList.toggle("blur");
+  droNebox.classList.remove("squishing");
+  droNebox.classList.toggle("moving");
+  droNebox.classList.toggle("hoverUp");
 });
 
 (function (i, s, o, g, r, a, m) {
