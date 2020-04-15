@@ -176,6 +176,22 @@ footer {
   transition: 0.5s ease;
 }
 
+.moving2 {
+  animation: moving2 20.6s cubic-bezier(0.97, 0.01, 0.12, 0.99) infinite alternate;
+}
+
+.moving3 {
+  animation: moving3 16.6s cubic-bezier(0.97, 0.01, 0.12, 0.99) infinite alternate;
+}
+
+.moving4 {
+  animation: moving4 26.6s cubic-bezier(0.97, 0.01, 0.12, 0.99) infinite alternate;
+}
+
+.moving5 {
+  animation: moving5 28.6s cubic-bezier(0.97, 0.01, 0.12, 0.99) infinite alternate;
+}
+
 .squishing {
   animation: squishing 1s ease-in-out infinite alternate;
 }
@@ -273,6 +289,53 @@ footer {
   }
 }
 
+@keyframes moving2 {
+  0% {
+    transform: translate(-200px);
+  }
+  30% {
+    transform: translate(-45px);
+  }
+  70% {
+    transform: translate(45px);
+  }
+  100% {
+    transform: translate(200px);
+  }
+}
+
+@keyframes moving3 {
+  0% {
+    transform: translate(-200px);
+  }
+  70% {
+    transform: translate(45px);
+  }
+  100% {
+    transform: translate(200px);
+  }
+}
+
+@keyframes moving4 {
+  0% {
+    transform: translate(-200px);
+  }
+
+  100% {
+    transform: translate(200px);
+  }
+}
+
+@keyframes moving5 {
+  0% {
+    transform: translate(-200px);
+  }
+
+  100% {
+    transform: translate(200px);
+  }
+}
+
 @keyframes squishing {
   10%,
   40%,
@@ -285,6 +348,163 @@ footer {
   100% {
     transform: scale(0.9, 1);
   }
+}
+.bounce {
+  animation: bounce 22s infinite;
+  -webkit-animation: bounce 22s infinite;
+  -moz-animation: bounce 22s infinite;
+  -o-animation: bounce 22s infinite;
+}
+
+.bounce2 {
+  animation: bounce 30s infinite;
+  -webkit-animation: bounce 30s infinite;
+  -moz-animation: bounce 30s infinite;
+  -o-animation: bounce 30s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+  }
+}
+
+@-o-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -o-transform: translateY(0);
+  }
+  40% {
+    -o-transform: translateY(-30px);
+  }
+  60% {
+    -o-transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* cloud */
+
+.cloud1 {
+  background-image: url("/static/cloud.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+}
+
+.cloud2 {
+  background-image: url("/static/cloud.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 40px;
+  left: 370px;
+  transform: scale(0.4);
+}
+
+.cloud3 {
+  background-image: url("/static/cloud.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 20px;
+  right: 0;
+}
+
+.cloud4 {
+  background-image: url("/static/cloud.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 40px;
+  right: 60px;
+  transform: scale(0.7);
+}
+
+.cloud5 {
+  background-image: url("/static/cloud.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 110px;
+  right: 360px;
+  transform: scale(0.89);
+}
+
+.cloud6 {
+  background-image: url("/static/cloud.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: -170px;
+  left: 0;
+}
+
+.cloud7 {
+  background-image: url("/static/cloud.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  top: 170px;
+  left: 100px;
 }
 
 /*Main h1*/

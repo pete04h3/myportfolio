@@ -1,6 +1,7 @@
 import { gallery as myImgs } from "./modules/gallery";
 import { bubble } from "./modules/bubble";
 import { drone } from "./modules/drone";
+import { clouds } from "./modules/clouds";
 
 ("use strict");
 
@@ -16,11 +17,19 @@ const menu = document.querySelector(".menu");
 const blur = document.querySelector("main");
 const canvas = document.querySelector("canvas");
 const droNebox = document.querySelector("body > div.drone");
+const cloud1 = document.querySelector(".cloud1");
+const cloud2 = document.querySelector(".cloud2");
+const cloud3 = document.querySelector(".cloud3");
+const cloud4 = document.querySelector(".cloud4");
+const cloud5 = document.querySelector(".cloud5");
+const cloud6 = document.querySelector(".cloud6");
+const cloud7 = document.querySelector(".cloud7");
 
 droNebox.addEventListener("click", () => {
   droNebox.classList.add("hoverUp");
   droNebox.addEventListener("click", () => {
     droNebox.classList.remove("hoverUp");
+
     location.reload();
   });
 });
@@ -30,6 +39,14 @@ toggler.addEventListener("click", () => {
   menu.classList.toggle("active");
   blur.classList.toggle("blur");
   canvas.classList.toggle("blur");
+  cloud1.classList.toggle("blurease");
+  cloud2.classList.toggle("blurease");
+  cloud3.classList.toggle("blurease");
+  cloud4.classList.toggle("blurease");
+  cloud5.classList.toggle("blurease");
+  cloud6.classList.toggle("blurease");
+  cloud7.classList.toggle("blurease");
+
   droNebox.classList.remove("squishing");
   droNebox.classList.toggle("moving");
   droNebox.classList.toggle("hoverUp");

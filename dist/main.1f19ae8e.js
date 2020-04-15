@@ -491,6 +491,26 @@ function move() {
   drone.classList.add("moving");
   setTimeout(start, 5000);
 }
+},{}],"modules/clouds.js":[function(require,module,exports) {
+"use strict";
+
+window.addEventListener("DOMContentLoaded", moveClouds);
+
+function moveClouds() {
+  var cloud1 = document.querySelector(".cloud1");
+  var cloud2 = document.querySelector(".cloud2");
+  var cloud3 = document.querySelector(".cloud3");
+  var cloud4 = document.querySelector(".cloud4");
+  var cloud5 = document.querySelector(".cloud5");
+  var cloud6 = document.querySelector(".cloud6");
+  var cloud7 = document.querySelector(".cloud7");
+  cloud2.classList.add("moving2");
+  cloud7.classList.add("moving4");
+  cloud1.classList.add("bounce");
+  cloud6.classList.add("moving5");
+  cloud3.classList.add("bounce2");
+  cloud5.classList.add("moving3");
+}
 },{}],"main.js":[function(require,module,exports) {
 "use strict";
 
@@ -499,6 +519,8 @@ var _gallery = require("./modules/gallery");
 var _bubble = require("./modules/bubble");
 
 var _drone = require("./modules/drone");
+
+var _clouds = require("./modules/clouds");
 
 "use strict";
 /* const data = [
@@ -514,6 +536,13 @@ var menu = document.querySelector(".menu");
 var blur = document.querySelector("main");
 var canvas = document.querySelector("canvas");
 var droNebox = document.querySelector("body > div.drone");
+var cloud1 = document.querySelector(".cloud1");
+var cloud2 = document.querySelector(".cloud2");
+var cloud3 = document.querySelector(".cloud3");
+var cloud4 = document.querySelector(".cloud4");
+var cloud5 = document.querySelector(".cloud5");
+var cloud6 = document.querySelector(".cloud6");
+var cloud7 = document.querySelector(".cloud7");
 droNebox.addEventListener("click", function () {
   droNebox.classList.add("hoverUp");
   droNebox.addEventListener("click", function () {
@@ -526,6 +555,13 @@ toggler.addEventListener("click", function () {
   menu.classList.toggle("active");
   blur.classList.toggle("blur");
   canvas.classList.toggle("blur");
+  cloud1.classList.toggle("blurease");
+  cloud2.classList.toggle("blurease");
+  cloud3.classList.toggle("blurease");
+  cloud4.classList.toggle("blurease");
+  cloud5.classList.toggle("blurease");
+  cloud6.classList.toggle("blurease");
+  cloud7.classList.toggle("blurease");
   droNebox.classList.remove("squishing");
   droNebox.classList.toggle("moving");
   droNebox.classList.toggle("hoverUp");
@@ -544,7 +580,7 @@ toggler.addEventListener("click", function () {
 
 ga("create", "UA-46156385-1", "cssscript.com");
 ga("send", "pageview");
-},{"./modules/gallery":"modules/gallery.js","./modules/bubble":"modules/bubble.js","./modules/drone":"modules/drone.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./modules/gallery":"modules/gallery.js","./modules/bubble":"modules/bubble.js","./modules/drone":"modules/drone.js","./modules/clouds":"modules/clouds.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -572,7 +608,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60380" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54468" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
