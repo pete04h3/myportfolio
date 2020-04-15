@@ -1,4 +1,5 @@
 import { gallery as myImgs } from "./modules/gallery";
+import { bubble } from "./modules/bubble";
 
 ("use strict");
 

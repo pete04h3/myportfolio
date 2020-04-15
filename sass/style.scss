@@ -111,3 +111,33 @@ footer {
 .social-links li .freecodecamp:hover {
   color: darkgreen;
 }
+
+/*Main h1*/
+
+main h1 {
+  color: antiquewhite;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  font-size: 320px;
+  font-family: monospace;
+  transform: skewX(10deg);
+  padding: 26px;
+  opacity: 0.6;
+}
+/* canvas AKA BIG SLIME BLACK DOT IN MIDDLE*/
+canvas {
+  filter: drop-shadow(-2px 1px 60px black);
+}
+
+/*bubble1 header*/
+
+.bubble1 {
+  background-image: url(/static/bubble1.png);
+  background-size: 50% 10%;
+  background-repeat: repeat-x;
+  position: fixed;
+  transform: scale();
+  width: 100%;
+  filter: brightness(22.5);
+}
