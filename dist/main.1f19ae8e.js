@@ -504,7 +504,7 @@ function moveClouds() {
   var cloud5 = document.querySelector(".cloud5");
   var cloud6 = document.querySelector(".cloud6");
   var cloud7 = document.querySelector(".cloud7");
-  cloud2.classList.add("moving2");
+  cloud2.classList.add("bounce2");
   cloud7.classList.add("moving4");
   cloud1.classList.add("bounce");
   cloud6.classList.add("moving5");
@@ -608,7 +608,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61912" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65520" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

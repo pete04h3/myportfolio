@@ -11,7 +11,7 @@ function moveClouds() {
   const cloud6 = document.querySelector(".cloud6");
   const cloud7 = document.querySelector(".cloud7");
 
-  cloud2.classList.add("moving2");
+  cloud2.classList.add("bounce2");
   cloud7.classList.add("moving4");
   cloud1.classList.add("bounce");
   cloud6.classList.add("moving5");

@@ -451,6 +451,7 @@ footer {
   width: 200px;
   height: 200px;
   top: 0;
+  filter: brightness(0.5);
 }
 
 .cloud2 {
@@ -458,11 +459,12 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  width: 200px;
+  width: 100px;
   height: 200px;
   top: 40px;
   left: 370px;
-  transform: scale(0.4);
+  transform: scale(0.6);
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .cloud3 {
@@ -474,6 +476,7 @@ footer {
   height: 200px;
   top: 20px;
   right: 0;
+  filter: brightness(0.65);
 }
 
 .cloud4 {
@@ -486,6 +489,7 @@ footer {
   top: 40px;
   right: 60px;
   transform: scale(0.7);
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .cloud5 {
@@ -493,11 +497,12 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 70px;
+  height: 70px;
   top: 110px;
   right: 360px;
   transform: scale(0.89);
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .cloud6 {
@@ -509,6 +514,7 @@ footer {
   height: 400px;
   top: -170px;
   left: 0;
+  filter: invert(1);
 }
 
 .cloud7 {
@@ -521,6 +527,7 @@ footer {
   top: 170px;
   left: 100px;
   z-index: 9;
+  filter: brightness(0.5);
 }
 
 /*Main h1*/
@@ -530,7 +537,7 @@ main h1 {
   font-weight: 800;
   font-style: normal;
   color: white;
-  filter: brightness(0.7);
+  filter: drop-shadow(2px 4px 6px black);
   margin: 0 auto;
   position: fixed;
   /* left: -20px; */
@@ -596,7 +603,7 @@ main h1 {
 }
 /* canvas AKA BIG SLIME BLACK DOT IN MIDDLE*/
 canvas {
-  filter: drop-shadow(-2px 1px 60px black);
+  filter: drop-shadow(2px 4px 6px black);
   opacity: 40%;
   z-index: 2;
 }
