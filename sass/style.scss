@@ -116,14 +116,14 @@ html {
 }
 
 .preloaderboxes .preloaderbox > div {
-  background: yellowgreen;
+  background: ghostwhite;
   --translateZ: 15.5px;
   --rotateY: 0deg;
   --rotateX: 0deg;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: yellowgreen;
+  background: darkblue;
   top: auto;
   right: auto;
   bottom: auto;
@@ -135,15 +135,15 @@ html {
 .preloaderboxes .preloaderbox > div:nth-child(1) {
   top: 0;
   left: 0;
-  background: yellowgreen;
+  background: hotpink;
 }
 .preloaderboxes .preloaderbox > div:nth-child(2) {
-  background: #145af2;
+  background: lightblue;
   right: 0;
   --rotateY: 90deg;
 }
 .preloaderboxes .preloaderbox > div:nth-child(3) {
-  background: #447cf5;
+  background: ghostwhite;
   --rotateX: -90deg;
 }
 .preloaderboxes .preloaderbox > div:nth-child(4) {
@@ -249,14 +249,15 @@ h1 {
   position: fixed;
   right: 0px;
   background-color: black;
+  z-index: 10;
 }
 
 #rightsidebar img {
-  width: 60px;
-  /* padding: 10px; */
-  transform: scale(0.5);
+  width: 50px;
+  transform: scale(0.6);
   position: fixed;
-  right: -8px;
+  right: 2px;
+  right: 0;
 }
 
 /*blur*/
