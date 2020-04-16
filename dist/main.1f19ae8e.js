@@ -476,11 +476,25 @@ init();
 },{}],"modules/drone.js":[function(require,module,exports) {
 "use strict";
 
-window.addEventListener("DOMContentLoaded", start);
+window.addEventListener("DOMContentLoaded", preload);
 var drone = document.querySelector("body > div.drone");
 var herotxt = document.querySelector("main > h1");
+var preloader = document.querySelector(".preloaderboxes");
+var preloadscreen = document.querySelector("#preloader");
+var overlay = document.querySelector(".overlay");
+var mainheadline = document.querySelector(".mainheadline");
+var mainheadline2 = document.querySelector(".mainheadline2");
+
+function preload() {
+  setTimeout(start, 3000);
+}
 
 function start() {
+  mainheadline2.classList.add("moving2");
+  mainheadline.classList.add("bounce");
+  overlay.classList.add("moving2");
+  herotxt.classList.add("squishing2");
+  preloadscreen.classList.add("hide");
   drone.classList.remove("moving");
   drone.classList.add("squishing");
   setTimeout(move, 8000);
@@ -608,7 +622,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65520" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60351" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
