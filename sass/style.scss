@@ -35,6 +35,30 @@ html {
   z-index: 9999;
 }
 
+/* pulse animation */
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.fe-pulse-w-pause {
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.fe-pulse-w-pause:hover,
+.fe-pulse-w-pause:focus {
+  animation-name: unset;
+}
+
 /* preloader */
 
 .hide {
@@ -209,9 +233,10 @@ h1 {
 .credentials {
   position: fixed;
   color: lightslategray;
+  font-weight: 600;
 
   transform: rotate(-90deg);
-  left: -45px;
+  left: -50px;
   bottom: 140px;
   font-size: 10px;
   z-index: 999;

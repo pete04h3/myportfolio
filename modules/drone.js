@@ -9,12 +9,14 @@ const preloadscreen = document.querySelector("#preloader");
 const overlay = document.querySelector(".overlay");
 const mainheadline = document.querySelector(".mainheadline");
 const mainheadline2 = document.querySelector(".mainheadline2");
+const burger = document.querySelector("body > div.menu__toggler");
 
 function preload() {
   setTimeout(start, 3000);
 }
 
 function start() {
+  burger.classList.add("fe-pulse-w-pause");
   mainheadline2.classList.add("moving2");
   mainheadline.classList.add("bounce");
   overlay.classList.add("moving2");

@@ -484,12 +484,14 @@ var preloadscreen = document.querySelector("#preloader");
 var overlay = document.querySelector(".overlay");
 var mainheadline = document.querySelector(".mainheadline");
 var mainheadline2 = document.querySelector(".mainheadline2");
+var burger = document.querySelector("body > div.menu__toggler");
 
 function preload() {
   setTimeout(start, 3000);
 }
 
 function start() {
+  burger.classList.add("fe-pulse-w-pause");
   mainheadline2.classList.add("moving2");
   mainheadline.classList.add("bounce");
   overlay.classList.add("moving2");
@@ -622,7 +624,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60733" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64679" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
