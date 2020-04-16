@@ -290,8 +290,34 @@ h1 {
   z-index: 10;
 }
 
+.aboutme {
+  position: fixed;
+  left: 0;
+  top: 350px;
+  transform: rotate(-90deg);
+  color: white;
+}
+
+.contactme {
+  position: fixed;
+  right: 0;
+  top: 350px;
+  transform: rotate(90deg);
+  color: white;
+}
+
+.credentials {
+  position: fixed;
+  color: lightslategray;
+  transform: rotate(-90deg);
+  left: -45px;
+  bottom: 140px;
+  font-size: 10px;
+  z-index: 999;
+}
+
 #rightsidebar {
-  width: 3vw;
+  width: 3.3vw;
   height: 100vh;
   float: right;
   position: fixed;
@@ -787,7 +813,7 @@ footer {
   font-size: 190px;
   color: deeppink;
   position: fixed;
-  top: 130px;
+  top: 190px;
   filter: drop-shadow(2px 4px 6px black);
 }
 
