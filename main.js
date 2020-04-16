@@ -2,6 +2,7 @@ import { gallery as myImgs } from "./modules/gallery";
 import { bubble } from "./modules/bubble";
 import { drone } from "./modules/drone";
 import { clouds } from "./modules/clouds";
+import { blackboxslideanimation } from "./modules/blackboxslideanimation";
 
 ("use strict");
 

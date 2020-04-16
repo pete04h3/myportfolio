@@ -527,6 +527,70 @@ function moveClouds() {
   cloud3.classList.add("bounce2");
   cloud5.classList.add("moving3");
 }
+},{}],"modules/blackboxslideanimation.js":[function(require,module,exports) {
+"use strict";
+
+window.addEventListener("DOMContentLoaded", slideAnimation);
+var about = document.querySelector("#leftsidebar > a.aboutme");
+var contact = document.querySelector("#rightsidebar > a.contactme");
+var rightwall = document.querySelector("body > div.right");
+var leftwall = document.querySelector("body > div.left");
+var aboutmesection = document.querySelector("#aboutmewrapper");
+var aboutmewrapper = document.querySelector("#aboutmewrapper > div");
+var contactwrapper = document.querySelector("#contactwrapper");
+
+function slideAnimation() {
+  about.addEventListener("click", slideIn);
+  contact.addEventListener("click", slideInContact);
+  rightwall.classList.add("hide");
+  leftwall.classList.add("hide");
+  aboutmesection.style.display = "none";
+  contactwrapper.style.display = "none";
+}
+
+function slideIn() {
+  rightwall.classList.remove("hide");
+  leftwall.classList.remove("hide");
+  getRdy();
+}
+
+function slideInContact() {
+  rightwall.classList.remove("hide");
+  leftwall.classList.remove("hide");
+  getRdyContact();
+}
+
+function getRdyContact() {
+  leftwall.classList.add("animated", "slideInLeft");
+  rightwall.classList.add("animated", "slideInRight");
+  setTimeout(slideOutContact, 1000);
+}
+
+function getRdy() {
+  leftwall.classList.add("animated", "slideInLeft");
+  rightwall.classList.add("animated", "slideInRight");
+  setTimeout(slideOut, 1000);
+}
+
+function slideOut() {
+  leftwall.classList.add("animated", "slideOutLeft");
+  rightwall.classList.add("animated", "slideOutRight");
+  aboutmesection.style.display = "block";
+  aboutmesection.classList.add("animated", "slideInDown");
+  aboutmewrapper.classList.remove("hide");
+  aboutmewrapper.classList.add("animated", "slideInDown");
+}
+
+function slideOutContact() {
+  leftwall.classList.add("animated", "slideOutLeft");
+  rightwall.classList.add("animated", "slideOutRight");
+  aboutmesection.style.display = "none";
+  contactwrapper.style.display = "block";
+  contactwrapper.classList.add("animated", "slideInUp");
+  slideIn();
+}
+
+slideAnimation();
 },{}],"main.js":[function(require,module,exports) {
 "use strict";
 
@@ -537,6 +601,8 @@ var _bubble = require("./modules/bubble");
 var _drone = require("./modules/drone");
 
 var _clouds = require("./modules/clouds");
+
+var _blackboxslideanimation = require("./modules/blackboxslideanimation");
 
 "use strict";
 /* const data = [
@@ -596,7 +662,7 @@ toggler.addEventListener("click", function () {
 
 ga("create", "UA-46156385-1", "cssscript.com");
 ga("send", "pageview");
-},{"./modules/gallery":"modules/gallery.js","./modules/bubble":"modules/bubble.js","./modules/drone":"modules/drone.js","./modules/clouds":"modules/clouds.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./modules/gallery":"modules/gallery.js","./modules/bubble":"modules/bubble.js","./modules/drone":"modules/drone.js","./modules/clouds":"modules/clouds.js","./modules/blackboxslideanimation":"modules/blackboxslideanimation.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -624,7 +690,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54335" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54998" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

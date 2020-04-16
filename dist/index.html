@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://use.typekit.net/kcc7hyg.css">
     <link rel="stylesheet" href="https://use.typekit.net/mzl5nte.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <title>Dashboard Portfolio</title>
   <script src="/style.500aa19d.js"></script></head>
   <body>
+    <div class="right"></div>
+    <div class="left"></div>
     <section id="preloader">
       <div class="preloaderboxes">
         <div class="preloaderbox">
@@ -65,7 +68,7 @@
 
     <div class="menu__toggler"><span></span></div>
     <nav id="leftsidebar">
-      <a class="aboutme" href="#">About</a>
+      <a class="aboutme" href="#aboutmewrapper">About</a>
       <a class="credentials">@Copyright peterp4N1K 2020</a>
     </nav>
     <nav id="rightsidebar">
@@ -74,6 +77,15 @@
     </nav>
 
     <main>
+      <article class="hide" id="aboutmewrapper">
+        <div class="animated slideInDown" style="position: fixed; width: 30%; height: 30vh; background-color: red; top: 150px; bottom: 0;">
+          <h1>Name</h1>
+          <h2>Some text</h2>
+        </div>
+      </article>
+      <article class="hide" id="contactwrapper">
+        <div class="animated slideInDown" style="position: fixed; width: 30%; height: 30vh; background-color: yellowgreen; top: 150px; bottom: 0; /* left: 0; */ right: 0;"></div>
+      </article>
       <div class="overlay"></div>
       <h1>Welcome</h1>
     </main>
