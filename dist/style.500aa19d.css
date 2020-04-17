@@ -530,6 +530,27 @@ footer {
   cursor: pointer;
 }
 
+.dronecontact {
+  filter: grayscale(1);
+  left: 70vw;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+  top: 60vh;
+  position: fixed;
+  transform: scaleY(1.5);
+}
+
+.droneabout {
+  filter: hue-rotate(105deg);
+  left: 70vw;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+  top: 0;
+  position: fixed;
+}
+
 /* drone animations */
 .skewing {
   animation: skewing 2s 1.5s ease-in-out infinite;

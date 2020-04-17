@@ -574,14 +574,25 @@ function getRdy() {
 
 function slideOut() {
   var abouth1 = document.querySelector("#aboutmewrapper > h1");
+  var drone = document.querySelector("body > div.drone");
+  var aboutdrone = document.querySelector("#aboutmewrapper > img");
   leftwall.classList.add("animated", "slideOutLeft");
   rightwall.classList.add("animated", "slideOutRight");
   aboutmesection.style.display = "block";
   abouth1.style.filter = "blur(0px)";
+  drone.style.display = "none";
+  aboutdrone.classList.add("animated", "slideInRight");
+  setTimeout(startPulsing, 500);
   aboutmesection.classList.add("animated", "slideInDown");
   aboutmewrapper.classList.remove("hide");
   aboutmewrapper.classList.add("animated", "slideInDown");
   about.addEventListener("click", slideInAgain);
+}
+
+function startPulsing() {
+  var aboutdrone = document.querySelector("#aboutmewrapper > img");
+  aboutdrone.classList.remove("animated", "slideInRight");
+  aboutdrone.classList.add("moving2");
 }
 
 function slideInAgain() {
@@ -591,10 +602,16 @@ function slideInAgain() {
 }
 
 function slideOutContact() {
+  var contact1 = document.querySelector("#contactwrapper > h1");
+  var drone = document.querySelector("body > div.drone");
   leftwall.classList.add("animated", "slideOutLeft");
   rightwall.classList.add("animated", "slideOutRight");
   aboutmesection.style.display = "none";
   contactwrapper.style.display = "block";
+  contact1.style.filter = "blur(0px)";
+  contact1.style.zindex = "2";
+  contact1.style.top = "90px";
+  drone.style.display = "none";
   contactwrapper.classList.add("animated", "slideInUp");
   about.addEventListener("click", slideIn);
   slideIn();
@@ -635,6 +652,8 @@ var cloud4 = document.querySelector(".cloud4");
 var cloud5 = document.querySelector(".cloud5");
 var cloud6 = document.querySelector(".cloud6");
 var cloud7 = document.querySelector(".cloud7");
+var aboutdrone = document.querySelector("#aboutmewrapper > img");
+var contactdrone = document.querySelector("#contactwrapper > img");
 droNebox.addEventListener("click", function () {
   droNebox.classList.add("hoverUp");
   droNebox.style.filter = "invert(1)";
@@ -659,6 +678,8 @@ toggler.addEventListener("click", function () {
   droNebox.classList.remove("squishing");
   droNebox.classList.toggle("moving");
   droNebox.classList.toggle("hoverUp");
+  contactdrone.style.display = "none";
+  aboutdrone.style.display = "none";
 });
 
 (function (i, s, o, g, r, a, m) {
@@ -702,7 +723,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55423" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55036" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

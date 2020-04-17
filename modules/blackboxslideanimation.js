@@ -48,15 +48,26 @@ function getRdy() {
 
 function slideOut() {
   const abouth1 = document.querySelector("#aboutmewrapper > h1");
+  const drone = document.querySelector("body > div.drone");
+  const aboutdrone = document.querySelector("#aboutmewrapper > img");
   leftwall.classList.add("animated", "slideOutLeft");
   rightwall.classList.add("animated", "slideOutRight");
   aboutmesection.style.display = "block";
   abouth1.style.filter = "blur(0px)";
+  drone.style.display = "none";
+  aboutdrone.classList.add("animated", "slideInRight");
+  setTimeout(startPulsing, 500);
 
   aboutmesection.classList.add("animated", "slideInDown");
   aboutmewrapper.classList.remove("hide");
   aboutmewrapper.classList.add("animated", "slideInDown");
   about.addEventListener("click", slideInAgain);
+}
+
+function startPulsing() {
+  const aboutdrone = document.querySelector("#aboutmewrapper > img");
+  aboutdrone.classList.remove("animated", "slideInRight");
+  aboutdrone.classList.add("moving2");
 }
 
 function slideInAgain() {
@@ -66,10 +77,16 @@ function slideInAgain() {
 }
 
 function slideOutContact() {
+  const contact1 = document.querySelector("#contactwrapper > h1");
+  const drone = document.querySelector("body > div.drone");
   leftwall.classList.add("animated", "slideOutLeft");
   rightwall.classList.add("animated", "slideOutRight");
   aboutmesection.style.display = "none";
   contactwrapper.style.display = "block";
+  contact1.style.filter = "blur(0px)";
+  contact1.style.zindex = "2";
+  contact1.style.top = "90px";
+  drone.style.display = "none";
   contactwrapper.classList.add("animated", "slideInUp");
   about.addEventListener("click", slideIn);
   slideIn();

@@ -25,6 +25,8 @@ const cloud4 = document.querySelector(".cloud4");
 const cloud5 = document.querySelector(".cloud5");
 const cloud6 = document.querySelector(".cloud6");
 const cloud7 = document.querySelector(".cloud7");
+const aboutdrone = document.querySelector("#aboutmewrapper > img");
+const contactdrone = document.querySelector("#contactwrapper > img");
 
 droNebox.addEventListener("click", () => {
   droNebox.classList.add("hoverUp");
@@ -53,6 +55,8 @@ toggler.addEventListener("click", () => {
   droNebox.classList.remove("squishing");
   droNebox.classList.toggle("moving");
   droNebox.classList.toggle("hoverUp");
+  contactdrone.style.display = "none";
+  aboutdrone.style.display = "none";
 });
 
 (function (i, s, o, g, r, a, m) {
