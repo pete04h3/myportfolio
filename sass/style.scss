@@ -2,6 +2,7 @@
 @use 'partials/header';
 @use 'partials/mixins';
 @use 'partials/nav';
+@use 'partials/contactform';
 
 /*
    * BASIC STYLES
@@ -877,6 +878,10 @@ canvas {
   filter: drop-shadow(2px 4px 6px black);
   opacity: 40%;
   z-index: 2;
+  transform: scale(0.178);
+  top: 100px;
+  position: relative;
+  left: 200px;
 }
 
 /*bubble1 header*/
@@ -899,7 +904,7 @@ canvas {
   right: 0;
   background-color: black;
   position: fixed;
-  z-index: 9;
+  z-index: 12;
 }
 
 .left {
@@ -908,7 +913,7 @@ canvas {
   left: 0;
   background-color: black;
   position: fixed;
-  z-index: 9;
+  z-index: 12;
 }
 
 #aboutmewrapper {

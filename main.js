@@ -28,8 +28,10 @@ const cloud7 = document.querySelector(".cloud7");
 
 droNebox.addEventListener("click", () => {
   droNebox.classList.add("hoverUp");
+  droNebox.style.filter = "invert(1)";
   droNebox.addEventListener("click", () => {
     droNebox.classList.remove("hoverUp");
+    droNebox.style.filter = "invert(0)";
 
     location.reload();
   });

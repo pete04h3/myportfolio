@@ -47,12 +47,22 @@ function getRdy() {
 }
 
 function slideOut() {
+  const abouth1 = document.querySelector("#aboutmewrapper > h1");
   leftwall.classList.add("animated", "slideOutLeft");
   rightwall.classList.add("animated", "slideOutRight");
   aboutmesection.style.display = "block";
+  abouth1.style.filter = "blur(0px)";
+
   aboutmesection.classList.add("animated", "slideInDown");
   aboutmewrapper.classList.remove("hide");
   aboutmewrapper.classList.add("animated", "slideInDown");
+  about.addEventListener("click", slideInAgain);
+}
+
+function slideInAgain() {
+  leftwall.classList.add("animated", "slideInLeft");
+  rightwall.classList.add("animated", "slideInRight");
+  setTimeout(slideOut, 1000);
 }
 
 function slideOutContact() {
@@ -61,6 +71,7 @@ function slideOutContact() {
   aboutmesection.style.display = "none";
   contactwrapper.style.display = "block";
   contactwrapper.classList.add("animated", "slideInUp");
+  about.addEventListener("click", slideIn);
   slideIn();
 }
 

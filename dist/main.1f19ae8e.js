@@ -573,12 +573,21 @@ function getRdy() {
 }
 
 function slideOut() {
+  var abouth1 = document.querySelector("#aboutmewrapper > h1");
   leftwall.classList.add("animated", "slideOutLeft");
   rightwall.classList.add("animated", "slideOutRight");
   aboutmesection.style.display = "block";
+  abouth1.style.filter = "blur(0px)";
   aboutmesection.classList.add("animated", "slideInDown");
   aboutmewrapper.classList.remove("hide");
   aboutmewrapper.classList.add("animated", "slideInDown");
+  about.addEventListener("click", slideInAgain);
+}
+
+function slideInAgain() {
+  leftwall.classList.add("animated", "slideInLeft");
+  rightwall.classList.add("animated", "slideInRight");
+  setTimeout(slideOut, 1000);
 }
 
 function slideOutContact() {
@@ -587,6 +596,7 @@ function slideOutContact() {
   aboutmesection.style.display = "none";
   contactwrapper.style.display = "block";
   contactwrapper.classList.add("animated", "slideInUp");
+  about.addEventListener("click", slideIn);
   slideIn();
 }
 
@@ -627,8 +637,10 @@ var cloud6 = document.querySelector(".cloud6");
 var cloud7 = document.querySelector(".cloud7");
 droNebox.addEventListener("click", function () {
   droNebox.classList.add("hoverUp");
+  droNebox.style.filter = "invert(1)";
   droNebox.addEventListener("click", function () {
     droNebox.classList.remove("hoverUp");
+    droNebox.style.filter = "invert(0)";
     location.reload();
   });
 });
@@ -690,7 +702,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54998" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55423" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
